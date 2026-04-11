@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>AnnotCheck</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 :root{
   --mint:#b8f0d8;--yellow:#ffe033;--purple:#9b5de5;
@@ -189,6 +190,11 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
 }
 #score-table-wrap thead th.num{text-align:right}
 #score-table-wrap thead th:hover{background:#7a3db5}
+/* tooltip underline hint */
+#score-table-wrap thead th[title]{
+  text-decoration:underline dotted rgba(255,255,255,.5);
+  text-underline-offset:3px;
+}
 #score-table-wrap tbody tr:nth-child(even){background:rgba(0,0,0,.035)}
 #score-table-wrap tbody tr:hover{background:#fff8cc}
 #score-table-wrap tbody td{padding:6px 11px;border:1px solid #e0e0e0;vertical-align:middle;white-space:nowrap}
@@ -205,6 +211,47 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
 .rank-badge.bronze{background:#f4b57a}
 #score-table-wrap::-webkit-scrollbar{width:5px;height:5px}
 #score-table-wrap::-webkit-scrollbar-thumb{background:#bbb;border-radius:3px}
+
+/* ── ANALYTICS PANEL ──────────────────────────────────────── */
+#panel-analytics{display:none;flex-direction:column;height:100%;overflow-y:auto;background:var(--gray)}
+#panel-analytics::-webkit-scrollbar{width:5px}
+#panel-analytics::-webkit-scrollbar-thumb{background:#bbb;border-radius:3px}
+.analytics-header{
+  background:var(--purple);color:var(--white);border-bottom:var(--border);
+  padding:10px 16px;flex-shrink:0;display:flex;align-items:center;gap:10px;
+}
+.analytics-header-title{font-family:var(--head);font-size:16px}
+.analytics-header-sub{font-size:11px;opacity:.75}
+.analytics-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:14px;
+}
+@media(max-width:900px){.analytics-grid{grid-template-columns:1fr}}
+.chart-card{
+  background:var(--white);border:var(--border);border-radius:var(--radius);
+  padding:16px;box-shadow:4px 4px 0 var(--black);
+}
+.chart-card.full-width{grid-column:1/-1}
+.chart-title{
+  font-family:var(--head);font-size:15px;margin-bottom:3px;
+  display:flex;align-items:center;gap:7px;
+}
+.chart-sub{font-size:11px;color:#777;margin-bottom:12px;font-style:italic}
+.chart-inner{position:relative;height:240px}
+.chart-card.full-width .chart-inner{height:260px}
+.chart-loading{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:#aaa;font-size:13px;font-weight:700;
+}
+/* Insight badges */
+.insight-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.insight-badge{
+  font-size:11px;font-weight:700;border:2px solid #111;border-radius:20px;
+  padding:3px 11px;display:flex;align-items:center;gap:5px;
+}
+.insight-badge.green{background:#d4fde8}
+.insight-badge.red{background:#ffe0e3}
+.insight-badge.yellow{background:var(--yellow)}
+.insight-badge.purple{background:#ede0ff}
 
 /* ── PASSWORD MODAL ─────────────────────────────────────── */
 #pw-overlay{
@@ -242,7 +289,6 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
 
 <!-- ══ TOP NAV ══════════════════════════════════════════ -->
 <nav id="topnav">
-  <!-- Triple-click this logo to open admin unlock -->
   <div class="logo" id="logo-trigger">ANNOT<span>.</span>CHECK</div>
 
   <div id="nav-img-controls" style="display:flex;align-items:center;gap:6px;">
@@ -258,13 +304,13 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
   <div id="stat-pills" style="margin-left:8px;"></div>
   <div id="nav-spacer"></div>
 
-  <!-- Admin badge — hidden until unlocked -->
   <div id="admin-badge" class="hpill admin-pill" style="display:none;"
        onclick="promptLock()" title="Click to lock admin mode">🔑 ADMIN</div>
 
   <div id="nav-tabs" style="display:flex;gap:5px;margin-left:8px;">
-    <button id="tab-review" class="nav-btn active" onclick="switchTab('review')">🔍 Review</button>
-    <button id="tab-scores" class="nav-btn"        onclick="switchTab('scores')" style="display:none">📊 Scores</button>
+    <button id="tab-review"    class="nav-btn active" onclick="switchTab('review')">🔍 Review</button>
+    <button id="tab-scores"    class="nav-btn" style="display:none" onclick="switchTab('scores')">📊 Scores</button>
+    <button id="tab-analytics" class="nav-btn" style="display:none" onclick="switchTab('analytics')">📈 Analytics</button>
   </div>
 
   <div class="hpill"      id="h-active" style="margin-left:8px;">—</div>
@@ -337,7 +383,7 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
       </div>
     </div>
 
-    <!-- ════ SCORES PANEL (admin only) ═══════════════════ -->
+    <!-- ════ SCORES PANEL ═══════════════════════════════ -->
     <div id="panel-scores">
       <div id="scores-toolbar">
         <span class="tb-label">📊 Score Sheet</span>
@@ -355,15 +401,73 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
       </div>
     </div>
 
+    <!-- ════ ANALYTICS PANEL ════════════════════════════ -->
+    <div id="panel-analytics">
+      <div class="analytics-header">
+        <div>
+          <div class="analytics-header-title">📈 Student Performance Analytics</div>
+          <div class="analytics-header-sub">Visual breakdown — who's excelling, and where</div>
+        </div>
+      </div>
+      <div class="analytics-grid" id="analytics-grid">
+        <div class="chart-card full-width">
+          <div class="chart-title">🏆 Overall Score Leaderboard</div>
+          <div class="chart-sub">Ranked by weighted score combining F1, IoU, label accuracy and FP penalty</div>
+          <div class="chart-inner"><canvas id="chart-leaderboard"></canvas><div class="chart-loading" id="load-leaderboard">Loading…</div></div>
+          <div class="insight-row" id="insight-leaderboard"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">🎯 Precision vs Recall</div>
+          <div class="chart-sub">X = Precision (accuracy of drawn boxes) · Y = Recall (detection rate)</div>
+          <div class="chart-inner"><canvas id="chart-pr-scatter"></canvas><div class="chart-loading" id="load-pr">Loading…</div></div>
+          <div class="insight-row" id="insight-pr"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">📦 Average IoU per Student</div>
+          <div class="chart-sub">How tightly drawn boxes overlap with ground truth — higher is better</div>
+          <div class="chart-inner"><canvas id="chart-iou"></canvas><div class="chart-loading" id="load-iou">Loading…</div></div>
+          <div class="insight-row" id="insight-iou"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">🔍 Best Box Finders (Recall)</div>
+          <div class="chart-sub">Who detects the most objects without missing them</div>
+          <div class="chart-inner"><canvas id="chart-recall"></canvas><div class="chart-loading" id="load-recall">Loading…</div></div>
+          <div class="insight-row" id="insight-recall"></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-title">✅ Most Precise Annotators</div>
+          <div class="chart-sub">Who draws the cleanest, most correct boxes</div>
+          <div class="chart-inner"><canvas id="chart-precision"></canvas><div class="chart-loading" id="load-precision">Loading…</div></div>
+          <div class="insight-row" id="insight-precision"></div>
+        </div>
+
+        <div class="chart-card full-width">
+          <div class="chart-title">🔢 Error Breakdown — TP / FP / FN per Student</div>
+          <div class="chart-sub">Green = correct detections · Red = wrong boxes drawn · Orange = missed objects</div>
+          <div class="chart-inner"><canvas id="chart-errors"></canvas><div class="chart-loading" id="load-errors">Loading…</div></div>
+        </div>
+
+        <div class="chart-card full-width">
+          <div class="chart-title">🕸️ Multi-Metric Radar — Top 5 Students</div>
+          <div class="chart-sub">Comparing F1, Precision, Recall, IoU, and Label Accuracy across top performers</div>
+          <div class="chart-inner" style="height:320px"><canvas id="chart-radar"></canvas><div class="chart-loading" id="load-radar">Loading…</div></div>
+        </div>
+      </div>
+    </div>
+
   </main>
 </div><!-- end layout -->
 
 <script>
 // ═══════════════════════════════════════════════════════
-//  CONFIG — injected by server
+//  CONFIG
 // ═══════════════════════════════════════════════════════
-var DATA_MODE  = 'static';   // 'flask' or 'static'
-var ADMIN_HASH = '59e48d9852412d3509483be639cb2b192ce110a275612e62977a1cd086486612';  // sha256 of admin password
+var DATA_MODE  = 'static';
+var ADMIN_HASH = '59e48d9852412d3509483be639cb2b192ce110a275612e62977a1cd086486612';
 
 // ═══════════════════════════════════════════════════════
 //  STATE
@@ -375,12 +479,34 @@ var scoreMap       = {};
 var lastAnnot      = null;
 var showGT = true, showStd = true;
 var summaryData    = [], perImageData = [], scoresLoaded = false;
+var analyticsLoaded = false;
 var allStudents    = [];
 var sortCol = null, sortAsc = true;
 var _manifest = null, _annotations = null;
+var _chartInstances = {};
 
 // ═══════════════════════════════════════════════════════
-//  API ABSTRACTION  (flask vs static)
+//  COLUMN TOOLTIPS for score table
+// ═══════════════════════════════════════════════════════
+var COL_TIPS = {
+  'Student':        'Student annotator name',
+  'Overall Score':  'Weighted composite score: F1 × 0.4 + IoU × 0.3 + Label Accuracy × 0.2 − FP penalty × 0.1',
+  'F1 Score':       'Harmonic mean of Precision and Recall — overall detection quality balance',
+  'Precision':      'Of all boxes the student drew, what % were correct (low FP = high precision)',
+  'Recall':         'Of all actual ground-truth objects, what % did the student find (low FN = high recall)',
+  'Avg IoU':        'Average Intersection over Union — how tightly student boxes overlap with ground truth',
+  'Label Accuracy': 'Of correctly matched boxes, what % had the right label/class assigned',
+  'TP':             'True Positives — boxes that correctly matched a ground-truth box',
+  'FP':             'False Positives — extra boxes drawn that had no matching ground-truth box',
+  'FN':             'False Negatives — ground-truth objects the student missed entirely',
+  'GT Boxes':       'Total number of ground-truth boxes across all images',
+  'S Boxes':        'Total number of boxes this student drew across all images',
+  'Total GT Boxes': 'Ground-truth box count for this specific image',
+  'Image':          'Image filename',
+};
+
+// ═══════════════════════════════════════════════════════
+//  API ABSTRACTION
 // ═══════════════════════════════════════════════════════
 async function loadManifest() {
   if (!_manifest) _manifest = await safeJson('/data/manifest.json');
@@ -434,17 +560,14 @@ async function safeJson(url) {
 }
 
 // ═══════════════════════════════════════════════════════
-//  ADMIN UNLOCK  (triple-click logo within 800 ms)
+//  ADMIN UNLOCK
 // ═══════════════════════════════════════════════════════
 var _logoClicks = 0, _logoTimer = null;
 document.getElementById('logo-trigger').addEventListener('click', function() {
   _logoClicks++;
   clearTimeout(_logoTimer);
   _logoTimer = setTimeout(function(){ _logoClicks = 0; }, 800);
-  if (_logoClicks >= 3) {
-    _logoClicks = 0;
-    if (!isAdmin) showPw();
-  }
+  if (_logoClicks >= 3) { _logoClicks = 0; if (!isAdmin) showPw(); }
 });
 
 function showPw() {
@@ -475,8 +598,9 @@ async function sha256(str) {
 
 function unlockAdmin() {
   isAdmin = true;
-  document.getElementById('admin-badge').style.display = '';
-  document.getElementById('tab-scores').style.display  = '';
+  document.getElementById('admin-badge').style.display    = '';
+  document.getElementById('tab-scores').style.display     = '';
+  document.getElementById('tab-analytics').style.display  = '';
   renderStudentList(allStudents);
   if (lastAnnot) updateStatPills(lastAnnot);
 }
@@ -484,15 +608,15 @@ function unlockAdmin() {
 function promptLock() {
   if (confirm('Lock admin mode?')) {
     isAdmin = false;
-    document.getElementById('admin-badge').style.display = 'none';
-    document.getElementById('tab-scores').style.display  = 'none';
+    document.getElementById('admin-badge').style.display    = 'none';
+    document.getElementById('tab-scores').style.display     = 'none';
+    document.getElementById('tab-analytics').style.display  = 'none';
     switchTab('review');
     renderStudentList(allStudents);
     if (lastAnnot) updateStatPills(lastAnnot);
   }
 }
 
-// Close modal by clicking backdrop
 document.getElementById('pw-overlay').addEventListener('click', function(e){
   if (e.target === this) closePw();
 });
@@ -578,15 +702,19 @@ wrap.addEventListener('touchend',function(){ _ltDist=null; });
 // ═══════════════════════════════════════════════════════
 //  TAB SWITCHING
 // ═══════════════════════════════════════════════════════
-function switchTab(tab){
-  var isR=(tab==='review');
-  document.getElementById('panel-review').style.display=isR?'flex':'none';
-  document.getElementById('panel-scores').style.display=isR?'none':'flex';
-  document.getElementById('tab-review').classList.toggle('active',isR);
-  document.getElementById('tab-scores').classList.toggle('active',!isR);
-  document.getElementById('nav-img-controls').style.display=isR?'flex':'none';
-  if(!isR && !scoresLoaded) loadScoreData();
+function switchTab(tab) {
+  var isR=(tab==='review'), isS=(tab==='scores'), isA=(tab==='analytics');
+  document.getElementById('panel-review').style.display    = isR ? 'flex' : 'none';
+  document.getElementById('panel-scores').style.display    = isS ? 'flex' : 'none';
+  document.getElementById('panel-analytics').style.display = isA ? 'flex' : 'none';
+  document.getElementById('tab-review').classList.toggle('active', isR);
+  document.getElementById('tab-scores').classList.toggle('active', isS);
+  document.getElementById('tab-analytics').classList.toggle('active', isA);
+  document.getElementById('nav-img-controls').style.display = isR ? 'flex' : 'none';
+  if (isS && !scoresLoaded)   loadScoreData();
+  if (isA && !analyticsLoaded) loadAnalyticsData();
 }
+
 function toggleLayer(w){
   if(w==='gt') { showGT=!showGT;   document.getElementById('toggle-gt').classList.toggle('off',!showGT);  }
   if(w==='std'){ showStd=!showStd; document.getElementById('toggle-std').classList.toggle('off',!showStd); }
@@ -813,11 +941,12 @@ function renderScoreView(){
   var cols=Object.keys(data[0]);
   var NUM={TP:1,FP:1,FN:1,Avg_IoU:1,Label_Accuracy:1,Precision:1,Recall:1,F1_Score:1,Overall_Score:1,GT_Boxes:1,S_Boxes:1,Total_GT_Boxes:1};
   var html='<table><thead><tr>';
-  if(isSummary) html+='<th>#</th>';
+  if(isSummary) html+='<th title="Rank by Overall Score">#</th>';
   cols.forEach(function(c){
-    var arr=sortCol===c?(sortAsc?' ▲':' ▼'):'';
-    html+='<th class="'+(NUM[c]?'num':'')+'" onclick="setSort(\''+c+'\')">'+
-          c.replace(/_/g,' ')+arr+'</th>';
+    var arr   = sortCol===c ? (sortAsc?' ▲':' ▼') : '';
+    var label = c.replace(/_/g,' ');
+    var tip   = COL_TIPS[label] || '';
+    html += '<th class="'+(NUM[c]?'num':'')+'" onclick="setSort(\''+c+'\')" title="'+tip+'">'+label+arr+'</th>';
   });
   html+='</tr></thead><tbody>';
   data.forEach(function(row,i){
@@ -868,6 +997,380 @@ function downloadCSV(){
     a.download=(mode==='summary'?'scores':'per_image_scores')+'.csv';
     a.click();
   }
+}
+
+// ═══════════════════════════════════════════════════════
+//  ANALYTICS TAB
+// ═══════════════════════════════════════════════════════
+var PALETTE = [
+  '#9b5de5','#00e5c0','#ff4757','#ffe033','#3ddc97',
+  '#ff922b','#4dabf7','#f783ac','#69db7c','#a9e34b',
+  '#ffd43b','#74c0fc','#da77f2','#63e6be','#ff8787'
+];
+
+function destroyChart(id) {
+  if (_chartInstances[id]) { _chartInstances[id].destroy(); delete _chartInstances[id]; }
+}
+
+function hideLoading(id) {
+  var el = document.getElementById(id);
+  if (el) el.style.display = 'none';
+}
+
+function insightBadge(cls, icon, text) {
+  return '<div class="insight-badge '+cls+'">'+icon+' '+text+'</div>';
+}
+
+async function loadAnalyticsData() {
+  if (!scoresLoaded) {
+    var results = await Promise.all([M.scores(), M.perImageScores()]);
+    summaryData = results[0] || [];
+    perImageData = results[1] || [];
+    scoresLoaded = true;
+  }
+  analyticsLoaded = true;
+  renderAllCharts();
+}
+
+function pct(v) { return Math.round((parseFloat(v) || 0) * 100) / 100; }
+
+function renderAllCharts() {
+  if (!summaryData.length) return;
+
+  // Sort by Overall_Score descending for leaderboard
+  var sorted = summaryData.slice().sort(function(a,b){
+    return (parseFloat(b.Overall_Score)||0) - (parseFloat(a.Overall_Score)||0);
+  });
+
+  var names  = sorted.map(function(r){ return r.Student; });
+  var scores = sorted.map(function(r){ return pct(r.Overall_Score); });
+  var precs  = sorted.map(function(r){ return pct(r.Precision); });
+  var recs   = sorted.map(function(r){ return pct(r.Recall); });
+  var ious   = sorted.map(function(r){ return parseFloat(r.Avg_IoU)||0; });
+  var f1s    = sorted.map(function(r){ return pct(r.F1_Score); });
+  var tps    = sorted.map(function(r){ return parseInt(r.TP)||0; });
+  var fps    = sorted.map(function(r){ return parseInt(r.FP)||0; });
+  var fns    = sorted.map(function(r){ return parseInt(r.FN)||0; });
+  var labels_acc = sorted.map(function(r){ return pct(r.Label_Accuracy); });
+
+  var barColors = scores.map(function(s){
+    return s >= 80 ? '#3ddc97' : s >= 60 ? '#ffe033' : s >= 40 ? '#ff922b' : '#ff4757';
+  });
+
+  var chartDefaults = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { bodyFont: { family: 'Nunito' }, titleFont: { family: 'Nunito', weight: '900' } }
+    }
+  };
+
+  // ── 1. LEADERBOARD ──────────────────────────────────
+  destroyChart('chart-leaderboard');
+  hideLoading('load-leaderboard');
+  _chartInstances['chart-leaderboard'] = new Chart(
+    document.getElementById('chart-leaderboard'), {
+    type: 'bar',
+    data: {
+      labels: names,
+      datasets: [{
+        data: scores,
+        backgroundColor: barColors,
+        borderColor: '#111',
+        borderWidth: 2,
+        borderRadius: 6,
+      }]
+    },
+    options: Object.assign({}, chartDefaults, {
+      indexAxis: 'y',
+      plugins: Object.assign({}, chartDefaults.plugins, {
+        tooltip: {
+          callbacks: {
+            label: function(ctx){ return ' Overall Score: ' + ctx.parsed.x + '%'; }
+          }
+        }
+      }),
+      scales: {
+        x: {
+          beginAtZero: true, max: 100,
+          title: { display: true, text: 'Overall Score (%)', font: { family: 'Nunito', weight: '700' } },
+          ticks: { callback: function(v){ return v+'%'; } }
+        },
+        y: { ticks: { font: { family: 'Nunito', weight: '700', size: 11 } } }
+      }
+    })
+  });
+
+  var top = sorted[0], bot = sorted[sorted.length-1];
+  var avgScore = scores.reduce(function(a,b){return a+b;},0)/scores.length;
+  document.getElementById('insight-leaderboard').innerHTML =
+    insightBadge('green','🥇', top.Student + ' leads at ' + pct(top.Overall_Score) + '%') +
+    insightBadge('red','⚠️', bot.Student + ' needs support at ' + pct(bot.Overall_Score) + '%') +
+    insightBadge('yellow','📊', 'Class average: ' + avgScore.toFixed(1) + '%');
+
+  // ── 2. PRECISION vs RECALL SCATTER ──────────────────
+  destroyChart('chart-pr-scatter');
+  hideLoading('load-pr');
+  var scatterData = sorted.map(function(r, i){
+    return { x: pct(r.Precision), y: pct(r.Recall), label: r.Student, color: PALETTE[i%PALETTE.length] };
+  });
+  _chartInstances['chart-pr-scatter'] = new Chart(
+    document.getElementById('chart-pr-scatter'), {
+    type: 'scatter',
+    data: {
+      datasets: scatterData.map(function(d){
+        return {
+          label: d.label,
+          data: [{ x: d.x, y: d.y }],
+          backgroundColor: d.color + 'cc',
+          borderColor: '#111',
+          borderWidth: 2,
+          pointRadius: 9,
+          pointHoverRadius: 12,
+        };
+      })
+    },
+    options: Object.assign({}, chartDefaults, {
+      plugins: Object.assign({}, chartDefaults.plugins, {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(ctx){
+              return ctx.dataset.label + ' — P: ' + ctx.parsed.x + '% | R: ' + ctx.parsed.y + '%';
+            }
+          }
+        }
+      }),
+      scales: {
+        x: {
+          title: { display: true, text: 'Precision (%)', font: { family: 'Nunito', weight: '700' } },
+          min: 0, max: 100,
+          ticks: { callback: function(v){ return v+'%'; } }
+        },
+        y: {
+          title: { display: true, text: 'Recall (%)', font: { family: 'Nunito', weight: '700' } },
+          min: 0, max: 100,
+          ticks: { callback: function(v){ return v+'%'; } }
+        }
+      }
+    })
+  });
+
+  // Insights: top-right = best overall, top-left = high recall low prec, bot-right = high prec low recall
+  var bestPR = sorted.reduce(function(best, r){
+    return (pct(r.Precision)+pct(r.Recall)) > (pct(best.Precision)+pct(best.Recall)) ? r : best;
+  }, sorted[0]);
+  var highRecall = sorted.slice().sort(function(a,b){ return pct(b.Recall)-pct(a.Recall); })[0];
+  var highPrec   = sorted.slice().sort(function(a,b){ return pct(b.Precision)-pct(a.Precision); })[0];
+  document.getElementById('insight-pr').innerHTML =
+    insightBadge('green','⭐', bestPR.Student + ' best P+R balance') +
+    insightBadge('purple','🔍', highRecall.Student + ' top recall ' + pct(highRecall.Recall) + '%') +
+    insightBadge('yellow','🎯', highPrec.Student + ' top precision ' + pct(highPrec.Precision) + '%');
+
+  // ── 3. IoU BAR ───────────────────────────────────────
+  destroyChart('chart-iou');
+  hideLoading('load-iou');
+  var iouSorted = sorted.slice().sort(function(a,b){ return (parseFloat(b.Avg_IoU)||0)-(parseFloat(a.Avg_IoU)||0); });
+  _chartInstances['chart-iou'] = new Chart(
+    document.getElementById('chart-iou'), {
+    type: 'bar',
+    data: {
+      labels: iouSorted.map(function(r){ return r.Student; }),
+      datasets: [{
+        data: iouSorted.map(function(r){ return +(parseFloat(r.Avg_IoU)||0).toFixed(3); }),
+        backgroundColor: iouSorted.map(function(r,i){ return PALETTE[i%PALETTE.length]+'cc'; }),
+        borderColor: '#111',
+        borderWidth: 2,
+        borderRadius: 5,
+      }]
+    },
+    options: Object.assign({}, chartDefaults, {
+      scales: {
+        y: {
+          beginAtZero: true, max: 1,
+          title: { display: true, text: 'Avg IoU', font: { family: 'Nunito', weight: '700' } }
+        },
+        x: { ticks: { font: { family: 'Nunito', weight: '600', size: 10 }, maxRotation: 30 } }
+      }
+    })
+  });
+
+  var topIoU = iouSorted[0];
+  var avgIoU = ious.reduce(function(a,b){return a+b;},0)/ious.length;
+  document.getElementById('insight-iou').innerHTML =
+    insightBadge('green','📐', topIoU.Student + ' tightest boxes at IoU ' + parseFloat(topIoU.Avg_IoU).toFixed(3)) +
+    insightBadge('yellow','📊', 'Class avg IoU: ' + avgIoU.toFixed(3));
+
+  // ── 4. RECALL BAR (box finders) ──────────────────────
+  destroyChart('chart-recall');
+  hideLoading('load-recall');
+  var recSorted = sorted.slice().sort(function(a,b){ return pct(b.Recall)-pct(a.Recall); });
+  _chartInstances['chart-recall'] = new Chart(
+    document.getElementById('chart-recall'), {
+    type: 'bar',
+    data: {
+      labels: recSorted.map(function(r){ return r.Student; }),
+      datasets: [{
+        label: 'Recall %',
+        data: recSorted.map(function(r){ return pct(r.Recall); }),
+        backgroundColor: recSorted.map(function(r){
+          var v = pct(r.Recall);
+          return v >= 80 ? '#3ddc97cc' : v >= 60 ? '#ffe033cc' : '#ff4757cc';
+        }),
+        borderColor: '#111',
+        borderWidth: 2,
+        borderRadius: 5,
+      }]
+    },
+    options: Object.assign({}, chartDefaults, {
+      scales: {
+        y: {
+          beginAtZero: true, max: 100,
+          title: { display: true, text: 'Recall (%)', font: { family: 'Nunito', weight: '700' } },
+          ticks: { callback: function(v){ return v+'%'; } }
+        },
+        x: { ticks: { font: { family: 'Nunito', weight: '600', size: 10 }, maxRotation: 30 } }
+      }
+    })
+  });
+
+  var topRec = recSorted[0], botRec = recSorted[recSorted.length-1];
+  document.getElementById('insight-recall').innerHTML =
+    insightBadge('green','🔍', topRec.Student + ' finds most objects (' + pct(topRec.Recall) + '%)') +
+    insightBadge('red','❌', botRec.Student + ' misses most (' + pct(botRec.Recall) + '% recall)');
+
+  // ── 5. PRECISION BAR (accuracy) ──────────────────────
+  destroyChart('chart-precision');
+  hideLoading('load-precision');
+  var precSorted = sorted.slice().sort(function(a,b){ return pct(b.Precision)-pct(a.Precision); });
+  _chartInstances['chart-precision'] = new Chart(
+    document.getElementById('chart-precision'), {
+    type: 'bar',
+    data: {
+      labels: precSorted.map(function(r){ return r.Student; }),
+      datasets: [{
+        label: 'Precision %',
+        data: precSorted.map(function(r){ return pct(r.Precision); }),
+        backgroundColor: precSorted.map(function(r){
+          var v = pct(r.Precision);
+          return v >= 80 ? '#9b5de5cc' : v >= 60 ? '#ffd43bcc' : '#ff6b9dcc';
+        }),
+        borderColor: '#111',
+        borderWidth: 2,
+        borderRadius: 5,
+      }]
+    },
+    options: Object.assign({}, chartDefaults, {
+      scales: {
+        y: {
+          beginAtZero: true, max: 100,
+          title: { display: true, text: 'Precision (%)', font: { family: 'Nunito', weight: '700' } },
+          ticks: { callback: function(v){ return v+'%'; } }
+        },
+        x: { ticks: { font: { family: 'Nunito', weight: '600', size: 10 }, maxRotation: 30 } }
+      }
+    })
+  });
+
+  var topPrec = precSorted[0];
+  document.getElementById('insight-precision').innerHTML =
+    insightBadge('purple','🎯', topPrec.Student + ' most precise (' + pct(topPrec.Precision) + '%)') +
+    insightBadge('yellow','📌', 'High precision = fewer false boxes drawn');
+
+  // ── 6. TP / FP / FN STACKED BAR ──────────────────────
+  destroyChart('chart-errors');
+  hideLoading('load-errors');
+  _chartInstances['chart-errors'] = new Chart(
+    document.getElementById('chart-errors'), {
+    type: 'bar',
+    data: {
+      labels: names,
+      datasets: [
+        {
+          label: 'TP (Correct)',
+          data: sorted.map(function(r){ return parseInt(r.TP)||0; }),
+          backgroundColor: '#3ddc97cc', borderColor: '#111', borderWidth: 1.5,
+        },
+        {
+          label: 'FP (Extra/Wrong)',
+          data: sorted.map(function(r){ return parseInt(r.FP)||0; }),
+          backgroundColor: '#ff4757cc', borderColor: '#111', borderWidth: 1.5,
+        },
+        {
+          label: 'FN (Missed)',
+          data: sorted.map(function(r){ return parseInt(r.FN)||0; }),
+          backgroundColor: '#ff922bcc', borderColor: '#111', borderWidth: 1.5,
+        },
+      ]
+    },
+    options: Object.assign({}, chartDefaults, {
+      plugins: Object.assign({}, chartDefaults.plugins, {
+        legend: { display: true, position: 'top', labels: { font: { family: 'Nunito', weight: '700' }, boxWidth: 14 } }
+      }),
+      scales: {
+        x: {
+          stacked: true,
+          ticks: { font: { family: 'Nunito', weight: '600', size: 10 }, maxRotation: 30 }
+        },
+        y: {
+          stacked: true,
+          title: { display: true, text: 'Box Count', font: { family: 'Nunito', weight: '700' } }
+        }
+      }
+    })
+  });
+
+  // ── 7. RADAR: TOP 5 ──────────────────────────────────
+  destroyChart('chart-radar');
+  hideLoading('load-radar');
+  var top5   = sorted.slice(0, Math.min(5, sorted.length));
+  var radarDS = top5.map(function(r, i){
+    return {
+      label: r.Student,
+      data: [
+        pct(r.F1_Score),
+        pct(r.Precision),
+        pct(r.Recall),
+        +(parseFloat(r.Avg_IoU)||0).toFixed(3) * 100,
+        pct(r.Label_Accuracy),
+      ],
+      borderColor: PALETTE[i],
+      backgroundColor: PALETTE[i] + '22',
+      borderWidth: 2.5,
+      pointBackgroundColor: PALETTE[i],
+      pointBorderColor: '#111',
+      pointBorderWidth: 1.5,
+      pointRadius: 4,
+    };
+  });
+  _chartInstances['chart-radar'] = new Chart(
+    document.getElementById('chart-radar'), {
+    type: 'radar',
+    data: {
+      labels: ['F1 Score', 'Precision', 'Recall', 'IoU ×100', 'Label Accuracy'],
+      datasets: radarDS
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'right',
+          labels: { font: { family: 'Nunito', weight: '700', size: 11 }, boxWidth: 14 }
+        },
+        tooltip: { bodyFont: { family: 'Nunito' } }
+      },
+      scales: {
+        r: {
+          beginAtZero: true, max: 100, min: 0,
+          ticks: { stepSize: 20, callback: function(v){ return v; }, font: { size: 10 } },
+          pointLabels: { font: { family: 'Nunito', weight: '700', size: 11 } }
+        }
+      }
+    }
+  });
 }
 
 boot();
