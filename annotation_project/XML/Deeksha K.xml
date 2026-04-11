@@ -1,0 +1,2226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>263</id>
+      <name>Complex2_Dataset1_Deeksha K</name>
+      <size>453</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-03 19:37:43.425218+00:00</created>
+      <updated>2026-04-08 12:58:31.061035+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>452</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>259</id>
+          <start>0</start>
+          <stop>452</stop>
+          <url>https://opencvat-ig.orchvate.com/api/jobs/259</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>Aakash</username>
+        <email>aakash.padayachi@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>licence_plate</name>
+          <color>#0e8a64</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>painted_plate_number</name>
+          <color>#fa3253</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2026-04-11 03:30:16.511814+00:00</dumped>
+  </meta>
+  <image id="0" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1020.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1222.90" ytl="1568.50" xbr="1483.00" ybr="1637.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="173.90" ytl="1374.50" xbr="340.30" ybr="1416.70" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1028.jpg" width="4160" height="3120">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1945.50" ytl="1832.30" xbr="2020.10" ybr="1898.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="98.40" ytl="2059.00" xbr="258.60" ybr="2102.90" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1048.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1652.40" ytl="1546.80" xbr="1763.70" ybr="1612.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1281.70" ytl="2360.50" xbr="1490.80" ybr="2486.20" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1069.jpg" width="1738" height="1032">
+    <box label="licence_plate" source="manual" occluded="0" xtl="202.60" ytl="157.90" xbr="305.90" ybr="255.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1217.20" ytl="236.48" xbr="1621.60" ybr="349.80" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1071.jpg" width="3120" height="4160">
+    <box label="licence_plate" source="manual" occluded="0" xtl="585.50" ytl="1998.50" xbr="781.60" ybr="2079.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2195.00" ytl="2175.30" xbr="2316.20" ybr="2279.40" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="ML_Model/Clean_Dataset/complex2/Dataset_1/117.jpg" width="3120" height="4160">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2188.56" ytl="2173.78" xbr="2318.70" ybr="2283.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="571.70" ytl="2006.15" xbr="789.52" ybr="2088.30" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1200.jpg" width="3120" height="4160">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2194.90" ytl="2175.20" xbr="2316.90" ybr="2279.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="583.60" ytl="2001.20" xbr="781.10" ybr="2081.20" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1281.jpeg" width="640" height="555">
+    <box label="licence_plate" source="manual" occluded="0" xtl="29.90" ytl="297.80" xbr="112.50" ybr="328.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="443.60" ytl="255.70" xbr="640.00" ybr="335.60" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1356.jpg" width="389" height="1003">
+    <box label="licence_plate" source="manual" occluded="0" xtl="86.30" ytl="721.90" xbr="184.60" ybr="797.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="51.30" ytl="326.40" xbr="125.80" ybr="359.00" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1531.jpg" width="1920" height="1080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="20.50" ytl="96.80" xbr="157.90" ybr="175.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="552.10" ytl="278.60" xbr="901.00" ybr="405.90" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1540.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="898.80" ytl="2359.20" xbr="1041.10" ybr="2422.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2349.40" ytl="2113.50" xbr="2471.40" ybr="2155.00" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1541.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2540.00" ytl="875.60" xbr="2676.80" ybr="914.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1291.20" ytl="999.80" xbr="1600.00" ybr="1096.20" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1550.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2351.50" ytl="499.50" xbr="2468.30" ybr="553.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1263.00" ytl="371.50" xbr="1722.20" ybr="576.20" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1551.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1011.30" ytl="906.40" xbr="1110.70" ybr="933.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1545.70" ytl="1274.10" xbr="1678.00" ybr="1339.90" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1556.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1008.20" ytl="1113.90" xbr="1843.40" ybr="1621.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2881.20" ytl="1080.80" xbr="2999.90" ybr="1206.40" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1559.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1969.70" ytl="1338.40" xbr="2290.00" ybr="1444.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1434.30" ytl="1554.90" xbr="1710.00" ybr="1744.70" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1566.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2098.10" ytl="2352.90" xbr="2633.20" ybr="2798.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="612.60" ytl="1310.70" xbr="932.60" ybr="1609.30" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1567.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2395.80" ytl="899.90" xbr="3097.80" ybr="1180.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1574.90" ytl="1004.60" xbr="1659.40" ybr="1078.90" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1568.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1648.73" ytl="1092.20" xbr="1922.00" ybr="1277.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1905.10" ytl="311.80" xbr="2109.20" ybr="393.90" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1570.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1384.70" ytl="517.70" xbr="1445.10" ybr="561.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="551.60" ytl="1494.30" xbr="1026.60" ybr="1727.70" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1575.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2496.60" ytl="1334.80" xbr="2601.30" ybr="1407.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1935.40" ytl="1327.30" xbr="2066.70" ybr="1411.90" z_order="0">
+    </box>
+  </image>
+  <image id="21" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1576.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2366.70" ytl="589.50" xbr="2442.20" ybr="646.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1470.80" ytl="1481.20" xbr="1701.30" ybr="1652.20" z_order="0">
+    </box>
+  </image>
+  <image id="22" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1577.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1601.40" ytl="1098.70" xbr="2042.10" ybr="1216.90" z_order="0">
+    </box>
+  </image>
+  <image id="23" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1579.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="890.70" xbr="80.50" ybr="957.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1648.60" ytl="1123.00" xbr="1890.20" ybr="1220.70" z_order="0">
+    </box>
+  </image>
+  <image id="24" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1582.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1251.90" ytl="1567.90" xbr="1576.50" ybr="1818.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="987.70" ytl="290.30" xbr="1325.30" ybr="644.70" z_order="0">
+    </box>
+  </image>
+  <image id="25" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1585.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="145.60" ytl="438.00" xbr="327.70" ybr="531.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1187.10" ytl="1077.70" xbr="1591.20" ybr="1200.30" z_order="0">
+    </box>
+  </image>
+  <image id="26" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1586.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1149.50" ytl="983.40" xbr="1748.40" ybr="1330.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2722.50" ytl="471.90" xbr="3000.00" ybr="590.30" z_order="0">
+    </box>
+  </image>
+  <image id="27" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1591.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="826.70" ytl="1340.90" xbr="1135.90" ybr="1639.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1775.90" ytl="1946.90" xbr="2203.80" ybr="2399.00" z_order="0">
+    </box>
+  </image>
+  <image id="28" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1596.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2475.00" ytl="959.60" xbr="2626.90" ybr="1042.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1025.00" ytl="1274.60" xbr="1382.00" ybr="1473.60" z_order="0">
+    </box>
+  </image>
+  <image id="29" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1597.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="855.10" ytl="654.10" xbr="1038.20" ybr="808.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1661.60" ytl="646.10" xbr="1785.00" ybr="696.80" z_order="0">
+    </box>
+  </image>
+  <image id="30" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1604.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1382.40" ytl="587.60" xbr="1725.00" ybr="806.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2811.30" ytl="218.00" xbr="3000.00" ybr="288.20" z_order="0">
+    </box>
+  </image>
+  <image id="31" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1607.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2034.20" ytl="1218.40" xbr="2128.30" ybr="1255.10" z_order="0">
+    </box>
+  </image>
+  <image id="32" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1610.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="744.90" ytl="721.00" xbr="858.60" ybr="784.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1742.80" ytl="877.80" xbr="2020.90" ybr="981.10" z_order="0">
+    </box>
+  </image>
+  <image id="33" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1611.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1418.90" ytl="1131.60" xbr="1533.10" ybr="1219.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="5.10" ytl="1115.80" xbr="309.70" ybr="1187.60" z_order="0">
+    </box>
+  </image>
+  <image id="34" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1614.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2540.70" ytl="875.30" xbr="2676.80" ybr="911.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1291.00" ytl="1002.30" xbr="1600.00" ybr="1096.40" z_order="0">
+    </box>
+  </image>
+  <image id="35" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1616.jpg" width="996" height="711">
+    <box label="licence_plate" source="manual" occluded="0" xtl="255.20" ytl="502.00" xbr="312.20" ybr="533.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="881.70" ytl="532.40" xbr="930.50" ybr="556.30" z_order="0">
+    </box>
+  </image>
+  <image id="36" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1618.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2217.70" ytl="1524.40" xbr="2499.30" ybr="1783.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="956.50" ytl="1642.20" xbr="1341.30" ybr="1956.10" z_order="0">
+    </box>
+  </image>
+  <image id="37" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1619.jpg" width="4000" height="1800">
+    <box label="licence_plate" source="manual" occluded="0" xtl="690.30" ytl="341.50" xbr="855.50" ybr="562.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2673.30" ytl="1179.30" xbr="3440.20" ybr="1597.40" z_order="0">
+    </box>
+  </image>
+  <image id="38" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1622.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2145.40" ytl="362.70" xbr="2363.10" ybr="572.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1267.70" ytl="959.80" xbr="1611.30" ybr="1325.90" z_order="0">
+    </box>
+  </image>
+  <image id="39" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1623.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="665.60" xbr="168.30" ybr="752.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1437.90" ytl="931.90" xbr="1653.30" ybr="1111.70" z_order="0">
+    </box>
+  </image>
+  <image id="40" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1624.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1311.80" ytl="1445.20" xbr="1823.50" ybr="1856.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2626.40" ytl="470.60" xbr="2913.40" ybr="743.60" z_order="0">
+    </box>
+  </image>
+  <image id="41" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1625.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="612.10" ytl="1312.60" xbr="933.10" ybr="1608.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2098.10" ytl="2353.20" xbr="2634.50" ybr="2799.20" z_order="0">
+    </box>
+  </image>
+  <image id="42" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1631.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1149.20" ytl="983.70" xbr="1749.00" ybr="1331.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2721.70" ytl="471.30" xbr="3000.00" ybr="591.40" z_order="0">
+    </box>
+  </image>
+  <image id="43" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1633.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="655.90" ytl="535.10" xbr="906.50" ybr="689.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="3042.50" ytl="1169.30" xbr="3901.00" ybr="1539.50" z_order="0">
+    </box>
+  </image>
+  <image id="44" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1634.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1073.20" ytl="1652.20" xbr="1575.90" ybr="2224.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="681.30" ytl="226.80" xbr="1182.70" ybr="484.50" z_order="0">
+    </box>
+  </image>
+  <image id="45" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1635.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="826.60" ytl="1341.50" xbr="1134.90" ybr="1641.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1775.40" ytl="1948.30" xbr="2205.00" ybr="2399.10" z_order="0">
+    </box>
+  </image>
+  <image id="46" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1636.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1177.20" ytl="1589.40" xbr="1599.60" ybr="1916.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2324.00" ytl="1089.40" xbr="2681.60" ybr="1386.30" z_order="0">
+    </box>
+  </image>
+  <image id="47" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1638.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1028.80" ytl="1275.40" xbr="1381.30" ybr="1472.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2475.00" ytl="960.20" xbr="2626.10" ybr="1041.40" z_order="0">
+    </box>
+  </image>
+  <image id="48" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1640.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1572.60" ytl="1622.10" xbr="1871.80" ybr="1837.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2817.60" ytl="618.10" xbr="2971.30" ybr="660.00" z_order="0">
+    </box>
+  </image>
+  <image id="49" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1641.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1970.20" ytl="144.10" xbr="2193.30" ybr="389.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1174.20" ytl="997.40" xbr="1637.80" ybr="1535.20" z_order="0">
+    </box>
+  </image>
+  <image id="50" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1645.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="744.80" ytl="720.20" xbr="858.60" ybr="785.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1743.40" ytl="876.70" xbr="2024.00" ybr="989.50" z_order="0">
+    </box>
+  </image>
+  <image id="51" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1659.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1510.80" ytl="863.60" xbr="1752.10" ybr="953.10" z_order="0">
+    </box>
+  </image>
+  <image id="52" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1665.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1429.71" ytl="1259.26" xbr="2011.01" ybr="1678.69" rotation="5.40" z_order="0">
+    </box>
+  </image>
+  <image id="53" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1667.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1539.30" ytl="421.80" xbr="1709.60" ybr="553.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="412.30" ytl="2242.60" xbr="1034.50" ybr="2646.80" z_order="0">
+    </box>
+  </image>
+  <image id="54" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1668.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1003.50" ytl="492.40" xbr="1190.50" ybr="575.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="3556.90" ytl="1122.40" xbr="3791.60" ybr="1268.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2128.00" ytl="1018.00" xbr="2299.70" ybr="1107.50" z_order="0">
+    </box>
+  </image>
+  <image id="55" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1669.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1455.70" ytl="1243.50" xbr="1541.50" ybr="1273.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2066.90" ytl="1377.60" xbr="2243.90" ybr="1443.30" z_order="0">
+    </box>
+  </image>
+  <image id="56" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1670.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="856.60" ytl="951.70" xbr="918.00" ybr="1000.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1380.80" ytl="1290.80" xbr="1472.90" ybr="1352.20" z_order="0">
+    </box>
+  </image>
+  <image id="57" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1672.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1263.90" ytl="372.80" xbr="1722.80" ybr="574.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2352.50" ytl="505.40" xbr="2468.20" ybr="555.90" z_order="0">
+    </box>
+  </image>
+  <image id="58" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1674.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="970.90" ytl="1220.30" xbr="1526.10" ybr="1412.10" z_order="0">
+    </box>
+  </image>
+  <image id="59" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1677.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1916.80" ytl="1188.80" xbr="2189.10" ybr="1280.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1710.40" ytl="861.90" xbr="1801.80" ybr="896.40" z_order="0">
+    </box>
+  </image>
+  <image id="60" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1679.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1810.20" ytl="1679.00" xbr="2246.10" ybr="2221.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2108.80" ytl="356.70" xbr="2290.20" ybr="579.70" z_order="0">
+    </box>
+  </image>
+  <image id="61" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1683.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1340.30" ytl="876.60" xbr="1903.40" ybr="1053.80" z_order="0">
+    </box>
+  </image>
+  <image id="62" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1684.jpg" width="1468" height="3264">
+    <box label="licence_plate" source="manual" occluded="0" xtl="613.00" ytl="1681.80" xbr="882.00" ybr="1754.90" z_order="0">
+    </box>
+  </image>
+  <image id="63" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1691.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1008.60" ytl="1115.40" xbr="1843.30" ybr="1623.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2881.40" ytl="1080.40" xbr="3000.00" ybr="1204.10" z_order="0">
+    </box>
+  </image>
+  <image id="64" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1695.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1257.70" ytl="1218.30" xbr="1428.40" ybr="1342.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2020.10" ytl="976.40" xbr="2198.40" ybr="1114.30" z_order="0">
+    </box>
+  </image>
+  <image id="65" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1696.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1100.90" ytl="1857.20" xbr="1458.90" ybr="2273.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2450.10" ytl="2981.10" xbr="3000.00" ybr="3728.73" z_order="0">
+    </box>
+  </image>
+  <image id="66" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1698.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1431.80" ytl="1549.50" xbr="1713.90" ybr="1744.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1970.60" ytl="1337.80" xbr="2290.40" ybr="1443.90" z_order="0">
+    </box>
+  </image>
+  <image id="67" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1702.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1620.30" ytl="693.80" xbr="1729.70" ybr="767.00" z_order="0">
+    </box>
+  </image>
+  <image id="68" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1710.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1391.20" ytl="1477.90" xbr="1800.00" ybr="1611.60" z_order="0">
+    </box>
+  </image>
+  <image id="69" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1717.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="990.30" ytl="1881.50" xbr="1274.60" ybr="1979.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1272.70" ytl="1317.30" xbr="1321.00" ybr="1338.70" z_order="0">
+    </box>
+  </image>
+  <image id="70" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1721.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1574.90" ytl="1004.40" xbr="1659.30" ybr="1077.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2395.60" ytl="899.50" xbr="3097.90" ybr="1179.70" z_order="0">
+    </box>
+  </image>
+  <image id="71" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1725.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1191.10" ytl="807.33" xbr="1385.77" ybr="895.04" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2465.20" ytl="947.20" xbr="2567.80" ybr="987.00" z_order="0">
+    </box>
+  </image>
+  <image id="72" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1726.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2925.50" ytl="1.80" xbr="3000.00" ybr="126.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1399.00" ytl="1210.10" xbr="1849.70" ybr="1648.50" z_order="0">
+    </box>
+  </image>
+  <image id="73" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1729.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1208.80" ytl="1072.00" xbr="1274.10" ybr="1113.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1972.10" ytl="1276.40" xbr="2196.10" ybr="1377.50" z_order="0">
+    </box>
+  </image>
+  <image id="74" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1730.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="508.22" xbr="160.28" ybr="666.98" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1119.80" ytl="1358.60" xbr="1898.30" ybr="1798.20" z_order="0">
+    </box>
+  </image>
+  <image id="75" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1731.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1648.70" ytl="1091.70" xbr="1920.90" ybr="1278.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1904.60" ytl="312.40" xbr="2110.40" ybr="395.40" z_order="0">
+    </box>
+  </image>
+  <image id="76" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1733.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1383.80" ytl="517.10" xbr="1445.10" ybr="561.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="552.40" ytl="1495.30" xbr="1026.60" ybr="1727.60" z_order="0">
+    </box>
+  </image>
+  <image id="77" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1737.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="619.30" ytl="2703.30" xbr="955.20" ybr="2893.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2433.70" ytl="1625.40" xbr="2607.20" ybr="1727.30" z_order="0">
+    </box>
+  </image>
+  <image id="78" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1738.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2597.30" ytl="2217.70" xbr="3000.00" ybr="2622.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="691.00" ytl="1096.30" xbr="1008.60" ybr="1314.70" z_order="0">
+    </box>
+  </image>
+  <image id="79" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1744.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2653.20" ytl="1026.90" xbr="2998.70" ybr="1362.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1414.31" ytl="1612.40" xbr="1846.51" ybr="2008.00" rotation="359.20" z_order="0">
+    </box>
+  </image>
+  <image id="80" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1749.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1470.70" ytl="1481.50" xbr="1701.20" ybr="1651.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2366.10" ytl="588.50" xbr="2442.70" ybr="646.90" z_order="0">
+    </box>
+  </image>
+  <image id="81" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1750.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1601.80" ytl="1099.30" xbr="2043.10" ybr="1216.50" z_order="0">
+    </box>
+  </image>
+  <image id="82" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1754.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1544.50" ytl="1120.00" xbr="1665.50" ybr="1190.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1420.00" ytl="1550.60" xbr="1661.80" ybr="1719.60" z_order="0">
+    </box>
+  </image>
+  <image id="83" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1760.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1648.50" ytl="1123.00" xbr="1890.70" ybr="1219.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="890.50" xbr="80.00" ybr="957.20" z_order="0">
+    </box>
+  </image>
+  <image id="84" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1763.jpg" width="4000" height="1800">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1455.10" ytl="534.70" xbr="1749.80" ybr="722.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1965.60" ytl="1024.80" xbr="2642.10" ybr="1461.90" z_order="0">
+    </box>
+  </image>
+  <image id="85" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1764.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1422.70" ytl="1153.20" xbr="1971.30" ybr="1547.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2749.40" ytl="321.50" xbr="2895.00" ybr="452.00" z_order="0">
+    </box>
+  </image>
+  <image id="86" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1767.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="986.30" ytl="289.20" xbr="1324.30" ybr="648.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1252.20" ytl="1567.80" xbr="1577.30" ybr="1820.40" z_order="0">
+    </box>
+  </image>
+  <image id="87" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1770.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1188.50" ytl="1079.80" xbr="1591.40" ybr="1200.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="145.30" ytl="437.50" xbr="327.20" ybr="530.90" z_order="0">
+    </box>
+  </image>
+  <image id="88" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1786.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="47.00" ytl="1188.60" xbr="167.60" ybr="1257.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1077.90" ytl="1712.50" xbr="1548.10" ybr="1958.70" z_order="0">
+    </box>
+  </image>
+  <image id="89" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1787.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2442.90" ytl="102.60" xbr="2562.10" ybr="328.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1799.60" ytl="1991.30" xbr="2354.20" ybr="2583.50" z_order="0">
+    </box>
+  </image>
+  <image id="90" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1788.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2783.30" ytl="862.30" xbr="2862.90" ybr="897.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1503.60" ytl="1578.60" xbr="1664.50" ybr="1686.30" z_order="0">
+    </box>
+  </image>
+  <image id="91" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1791.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="118.90" ytl="227.50" xbr="209.30" ybr="262.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="859.90" ytl="1239.50" xbr="1317.30" ybr="1536.60" z_order="0">
+    </box>
+  </image>
+  <image id="92" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1801.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1004.60" ytl="936.50" xbr="1288.20" ybr="1183.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1869.90" ytl="176.40" xbr="2285.10" ybr="298.40" z_order="0">
+    </box>
+  </image>
+  <image id="93" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1804.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="889.60" ytl="1124.90" xbr="1208.00" ybr="1400.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1147.50" ytl="634.50" xbr="1407.50" ybr="710.80" z_order="0">
+    </box>
+  </image>
+  <image id="94" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1805.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="854.70" ytl="653.70" xbr="1038.90" ybr="809.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1661.40" ytl="645.80" xbr="1785.20" ybr="695.00" z_order="0">
+    </box>
+  </image>
+  <image id="95" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1808.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="907.10" ytl="1890.10" xbr="1478.90" ybr="2234.10" z_order="0">
+    </box>
+  </image>
+  <image id="96" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1813.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1460.00" ytl="1466.20" xbr="1905.40" ybr="1787.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2517.10" ytl="1060.90" xbr="2828.90" ybr="1252.50" z_order="0">
+    </box>
+  </image>
+  <image id="97" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1814.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="986.60" ytl="1013.70" xbr="1396.00" ybr="1145.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2817.70" ytl="804.60" xbr="2966.10" ybr="848.60" z_order="0">
+    </box>
+  </image>
+  <image id="98" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1815.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1382.70" ytl="587.40" xbr="1725.60" ybr="806.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2810.60" ytl="216.10" xbr="3000.00" ybr="288.00" z_order="0">
+    </box>
+  </image>
+  <image id="99" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1817.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1715.80" ytl="1193.10" xbr="1804.30" ybr="1228.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2361.90" ytl="1387.40" xbr="2539.30" ybr="1465.40" z_order="0">
+    </box>
+  </image>
+  <image id="100" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1819.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="765.90" ytl="1480.70" xbr="945.00" ybr="1614.80" z_order="0">
+    </box>
+  </image>
+  <image id="101" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1820.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2880.70" ytl="152.60" xbr="2993.70" ybr="280.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1856.20" ytl="1674.20" xbr="2419.20" ybr="2154.20" z_order="0">
+    </box>
+  </image>
+  <image id="102" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1821.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="5.70" ytl="1115.80" xbr="309.80" ybr="1189.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1418.90" ytl="1131.20" xbr="1532.90" ybr="1220.80" z_order="0">
+    </box>
+  </image>
+  <image id="103" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1825.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1428.00" ytl="1283.40" xbr="2016.40" ybr="1656.60" z_order="0">
+    </box>
+  </image>
+  <image id="104" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1827.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1832.70" ytl="1699.50" xbr="2245.00" ybr="2186.80" z_order="0">
+    </box>
+  </image>
+  <image id="105" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1833.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1314.20" ytl="1445.10" xbr="1823.50" ybr="1856.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2626.80" ytl="471.70" xbr="2914.00" ybr="742.10" z_order="0">
+    </box>
+  </image>
+  <image id="106" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1840.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2745.20" ytl="320.20" xbr="2894.90" ybr="450.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1422.90" ytl="1152.80" xbr="1972.50" ybr="1546.30" z_order="0">
+    </box>
+  </image>
+  <image id="107" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1841.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="211.80" ytl="591.00" xbr="369.30" ybr="656.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="3565.60" ytl="1394.10" xbr="3855.40" ybr="1570.90" z_order="0">
+    </box>
+  </image>
+  <image id="108" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1844.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1178.20" ytl="1588.80" xbr="1600.00" ybr="1917.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2323.80" ytl="1090.30" xbr="2681.40" ybr="1386.80" z_order="0">
+    </box>
+  </image>
+  <image id="109" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1848.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1004.20" ytl="938.50" xbr="1289.30" ybr="1185.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1869.50" ytl="175.70" xbr="2287.00" ybr="299.00" z_order="0">
+    </box>
+  </image>
+  <image id="110" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1863.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1292.10" ytl="1000.30" xbr="1599.20" ybr="1096.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2539.40" ytl="875.30" xbr="2676.90" ybr="913.50" z_order="0">
+    </box>
+  </image>
+  <image id="111" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1870.jpg" width="996" height="711">
+    <box label="licence_plate" source="manual" occluded="0" xtl="256.00" ytl="502.80" xbr="311.80" ybr="532.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="882.00" ytl="532.30" xbr="930.40" ybr="556.30" z_order="0">
+    </box>
+  </image>
+  <image id="112" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1876.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="956.30" ytl="1648.20" xbr="1338.50" ybr="1957.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2216.80" ytl="1524.20" xbr="2499.00" ybr="1779.50" z_order="0">
+    </box>
+  </image>
+  <image id="113" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1878.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1510.70" ytl="863.20" xbr="1752.10" ybr="953.00" z_order="0">
+    </box>
+  </image>
+  <image id="114" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1885.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1428.60" ytl="1283.90" xbr="2011.80" ybr="1656.60" z_order="0">
+    </box>
+  </image>
+  <image id="115" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1887.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="412.30" ytl="2241.20" xbr="1034.30" ybr="2646.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1539.30" ytl="421.10" xbr="1709.10" ybr="554.40" z_order="0">
+    </box>
+  </image>
+  <image id="116" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1889.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1455.60" ytl="1243.40" xbr="1541.70" ybr="1273.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2066.90" ytl="1377.30" xbr="2244.00" ybr="1444.20" z_order="0">
+    </box>
+  </image>
+  <image id="117" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1890.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1380.40" ytl="1291.50" xbr="1474.00" ybr="1353.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="822.57" ytl="941.82" xbr="933.50" ybr="1017.63" z_order="0">
+    </box>
+  </image>
+  <image id="118" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1891.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2353.50" ytl="505.00" xbr="2467.90" ybr="550.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1263.10" ytl="368.70" xbr="1722.70" ybr="577.10" z_order="0">
+    </box>
+  </image>
+  <image id="119" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1894.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="971.00" ytl="1220.10" xbr="1529.40" ybr="1412.10" z_order="0">
+    </box>
+  </image>
+  <image id="120" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1899.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1833.80" ytl="1700.30" xbr="2247.60" ybr="2174.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2108.90" ytl="357.30" xbr="2288.90" ybr="579.00" z_order="0">
+    </box>
+  </image>
+  <image id="121" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1917.jpg" width="2600" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="321.40" ytl="2400.70" xbr="487.00" ybr="2488.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1178.10" ytl="2142.50" xbr="1271.80" ybr="2226.40" z_order="0">
+    </box>
+  </image>
+  <image id="122" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1939.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="412.90" ytl="1139.50" xbr="464.40" ybr="1167.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="979.10" ytl="1150.90" xbr="1080.80" ybr="1183.70" z_order="0">
+    </box>
+  </image>
+  <image id="123" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1946.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="379.00" ytl="2141.20" xbr="523.30" ybr="2182.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1196.30" ytl="2062.80" xbr="1283.50" ybr="2092.30" z_order="0">
+    </box>
+  </image>
+  <image id="124" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1947.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="111.40" ytl="1248.10" xbr="167.40" ybr="1278.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="193.40" ytl="1479.40" xbr="285.70" ybr="1530.70" z_order="0">
+    </box>
+  </image>
+  <image id="125" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1948.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1055.50" ytl="2096.40" xbr="1148.20" ybr="2120.80" z_order="0">
+    </box>
+  </image>
+  <image id="126" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1949.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1609.20" ytl="1468.50" xbr="1669.00" ybr="1487.50" z_order="0">
+    </box>
+  </image>
+  <image id="127" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1964.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="100.30" ytl="1325.70" xbr="147.70" ybr="1351.80" z_order="0">
+    </box>
+  </image>
+  <image id="128" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1970.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2536.00" ytl="2445.80" xbr="2659.70" ybr="2525.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1246.20" ytl="2467.00" xbr="1384.10" ybr="2505.30" z_order="0">
+    </box>
+  </image>
+  <image id="129" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1974.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="141.20" ytl="2085.60" xbr="249.90" ybr="2136.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="540.30" ytl="2564.00" xbr="743.60" ybr="2669.80" z_order="0">
+    </box>
+  </image>
+  <image id="130" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1995.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="487.20" ytl="825.80" xbr="538.80" ybr="854.10" z_order="0">
+    </box>
+  </image>
+  <image id="131" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1997.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="70.30" ytl="862.70" xbr="112.10" ybr="884.70" z_order="0">
+    </box>
+  </image>
+  <image id="132" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2023.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1310.80" ytl="2395.60" xbr="1364.40" ybr="2420.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1882.10" ytl="2689.80" xbr="2171.60" ybr="2788.07" z_order="0">
+    </box>
+  </image>
+  <image id="133" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2036.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1539.50" ytl="2448.50" xbr="1658.40" ybr="2515.00" z_order="0">
+    </box>
+  </image>
+  <image id="134" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2065.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1421.40" ytl="1550.90" xbr="1658.20" ybr="1715.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1544.70" ytl="1121.40" xbr="1664.30" ybr="1189.70" z_order="0">
+    </box>
+  </image>
+  <image id="135" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2120.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="884.10" ytl="2458.80" xbr="1131.60" ybr="2535.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1542.60" ytl="2477.60" xbr="1592.90" ybr="2506.90" z_order="0">
+    </box>
+  </image>
+  <image id="136" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2122.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1295.00" ytl="2361.00" xbr="1351.60" ybr="2391.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="935.30" ytl="2370.40" xbr="1038.80" ybr="2397.70" z_order="0">
+    </box>
+  </image>
+  <image id="137" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2129.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1782.60" ytl="2007.70" xbr="1852.40" ybr="2057.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2312.60" ytl="2127.10" xbr="2432.10" ybr="2166.50" z_order="0">
+    </box>
+  </image>
+  <image id="138" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2134.jpg" width="1468" height="3264">
+    <box label="licence_plate" source="manual" occluded="0" xtl="613.70" ytl="1679.70" xbr="882.70" ybr="1755.60" z_order="0">
+    </box>
+  </image>
+  <image id="139" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2157.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="854.80" ytl="653.50" xbr="1038.50" ybr="808.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1662.40" ytl="645.60" xbr="1784.80" ybr="695.50" z_order="0">
+    </box>
+  </image>
+  <image id="140" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2159.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1210.10" ytl="1073.10" xbr="1273.70" ybr="1112.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1972.20" ytl="1276.60" xbr="2195.80" ybr="1375.50" z_order="0">
+    </box>
+  </image>
+  <image id="141" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2215.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="76.00" ytl="699.50" xbr="114.90" ybr="720.20" z_order="0">
+    </box>
+  </image>
+  <image id="142" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2221.png" width="2134" height="2988">
+  </image>
+  <image id="143" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2222.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2213.70" ytl="2590.80" xbr="2307.70" ybr="2645.50" z_order="0">
+    </box>
+  </image>
+  <image id="144" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2250.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="152.80" ytl="887.90" xbr="225.50" ybr="925.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="601.60" ytl="1020.10" xbr="682.60" ybr="1062.80" z_order="0">
+    </box>
+  </image>
+  <image id="145" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2254.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1518.80" ytl="2537.60" xbr="1662.20" ybr="2572.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2340.10" ytl="2501.10" xbr="2442.10" ybr="2525.40" z_order="0">
+    </box>
+  </image>
+  <image id="146" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2271.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1384.80" ytl="2193.10" xbr="1473.50" ybr="2215.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2082.30" ytl="2217.70" xbr="2167.40" ybr="2241.60" z_order="0">
+    </box>
+  </image>
+  <image id="147" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2273.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1143.60" ytl="2558.70" xbr="1301.80" ybr="2598.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2033.40" ytl="2708.40" xbr="2212.00" ybr="2741.30" z_order="0">
+    </box>
+  </image>
+  <image id="148" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2277.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1102.60" ytl="1856.60" xbr="1458.30" ybr="2276.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2444.30" ytl="2971.40" xbr="3000.00" ybr="3727.60" z_order="0">
+    </box>
+  </image>
+  <image id="149" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2278.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2561.60" ytl="987.40" xbr="2742.30" ybr="1107.30" z_order="0">
+    </box>
+  </image>
+  <image id="150" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2309.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="216.90" ytl="2719.10" xbr="328.40" ybr="2785.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1059.60" ytl="2351.90" xbr="1122.80" ybr="2383.30" z_order="0">
+    </box>
+  </image>
+  <image id="151" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2334.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1431.90" ytl="2486.20" xbr="1602.60" ybr="2601.20" z_order="0">
+    </box>
+  </image>
+  <image id="152" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2360.png" width="352" height="640">
+  </image>
+  <image id="153" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2364.jpg" width="2600" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="106.50" ytl="2013.50" xbr="224.30" ybr="2044.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2017.60" ytl="2140.00" xbr="2101.40" ybr="2185.10" z_order="0">
+    </box>
+  </image>
+  <image id="154" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2365.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1563.90" ytl="2479.30" xbr="1645.10" ybr="2529.90" z_order="0">
+    </box>
+  </image>
+  <image id="155" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2366.png" width="720" height="1280">
+  </image>
+  <image id="156" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2367.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="264.60" ytl="728.70" xbr="443.10" ybr="784.10" z_order="0">
+    </box>
+  </image>
+  <image id="157" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2368.jpg" width="720" height="1280">
+  </image>
+  <image id="158" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2370.jpg" width="720" height="1280">
+  </image>
+  <image id="159" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2374.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1358.20" ytl="3064.00" xbr="1814.40" ybr="3207.40" z_order="0">
+    </box>
+  </image>
+  <image id="160" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2382.png" width="2134" height="2987">
+  </image>
+  <image id="161" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2386.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="703.80" ytl="2423.80" xbr="819.00" ybr="2483.00" z_order="0">
+    </box>
+  </image>
+  <image id="162" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2387.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="872.50" ytl="2727.90" xbr="971.20" ybr="2777.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1370.80" ytl="2635.70" xbr="1490.10" ybr="2666.50" z_order="0">
+    </box>
+  </image>
+  <image id="163" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2398.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1096.90" ytl="2564.60" xbr="1240.70" ybr="2601.30" z_order="0">
+    </box>
+  </image>
+  <image id="164" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2402.jpg" width="720" height="1280">
+  </image>
+  <image id="165" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2403.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1029.10" ytl="2461.60" xbr="1212.00" ybr="2512.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1873.10" ytl="2162.70" xbr="1964.50" ybr="2230.90" z_order="0">
+    </box>
+  </image>
+  <image id="166" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2411.jpg" width="720" height="1280">
+  </image>
+  <image id="167" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2412.jpg" width="1884" height="4080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="179.10" ytl="3385.70" xbr="494.90" ybr="3598.60" z_order="0">
+    </box>
+  </image>
+  <image id="168" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2419.png" width="3197" height="1727">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2624.80" ytl="1375.60" xbr="2698.30" ybr="1415.40" z_order="0">
+    </box>
+  </image>
+  <image id="169" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2420.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1341.00" ytl="876.20" xbr="1904.80" ybr="1053.80" z_order="0">
+    </box>
+  </image>
+  <image id="170" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2421.png" width="720" height="1280">
+  </image>
+  <image id="171" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2429.jpg" width="3353" height="1824">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1285.30" ytl="1482.40" xbr="1350.70" ybr="1519.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1822.50" ytl="1395.80" xbr="1967.20" ybr="1444.30" z_order="0">
+    </box>
+  </image>
+  <image id="172" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2430.png" width="352" height="640">
+  </image>
+  <image id="173" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2439.png" width="352" height="640">
+  </image>
+  <image id="174" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2441.jpg" width="720" height="1280">
+  </image>
+  <image id="175" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2446.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1869.90" ytl="174.60" xbr="2286.70" ybr="299.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1005.40" ytl="937.10" xbr="1287.00" ybr="1185.60" z_order="0">
+    </box>
+  </image>
+  <image id="176" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2447.png" width="352" height="640">
+  </image>
+  <image id="177" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2453.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1525.40" ytl="2811.20" xbr="1706.50" ybr="2859.30" z_order="0">
+    </box>
+  </image>
+  <image id="178" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2470.jpg" width="720" height="1280">
+  </image>
+  <image id="179" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2477.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1130.40" ytl="2411.20" xbr="1471.60" ybr="2511.20" z_order="0">
+    </box>
+  </image>
+  <image id="180" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2479.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="428.70" ytl="763.60" xbr="505.60" ybr="789.00" z_order="0">
+    </box>
+  </image>
+  <image id="181" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2483.jpg" width="352" height="640">
+    <box label="licence_plate" source="manual" occluded="0" xtl="114.10" ytl="461.20" xbr="198.90" ybr="486.50" z_order="0">
+    </box>
+  </image>
+  <image id="182" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2486.png" width="720" height="1280">
+  </image>
+  <image id="183" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2487.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="135.60" ytl="2410.90" xbr="388.20" ybr="2484.50" z_order="0">
+    </box>
+  </image>
+  <image id="184" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2488.jpg" width="720" height="1280">
+  </image>
+  <image id="185" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2489.png" width="2134" height="2988">
+  </image>
+  <image id="186" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2495.png" width="352" height="640">
+  </image>
+  <image id="187" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2497.jpg" width="720" height="1280">
+  </image>
+  <image id="188" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2498.jpg" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="965.90" ytl="1437.10" xbr="1058.20" ybr="1495.40" z_order="0">
+    </box>
+  </image>
+  <image id="189" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2507.png" width="720" height="1280">
+  </image>
+  <image id="190" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2515.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1124.40" ytl="2697.80" xbr="1409.50" ybr="2877.10" z_order="0">
+    </box>
+  </image>
+  <image id="191" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2516.png" width="720" height="1280">
+  </image>
+  <image id="192" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2518.jpg" width="2136" height="2991">
+  </image>
+  <image id="193" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2520.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="84.30" ytl="1215.50" xbr="135.90" ybr="1239.50" z_order="0">
+    </box>
+  </image>
+  <image id="194" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2521.jpg" width="4624" height="3472">
+  </image>
+  <image id="195" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2527.jpg" width="660" height="449">
+    <box label="licence_plate" source="manual" occluded="0" xtl="571.90" ytl="227.50" xbr="659.70" ybr="255.20" z_order="0">
+    </box>
+  </image>
+  <image id="196" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2532.png" width="1088" height="1920">
+  </image>
+  <image id="197" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2534.png" width="352" height="640">
+  </image>
+  <image id="198" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2535.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="625.80" ytl="875.50" xbr="720.00" ybr="910.50" z_order="0">
+    </box>
+  </image>
+  <image id="199" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2536.jpg" width="3471" height="1679">
+  </image>
+  <image id="200" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2537.jpg" width="3472" height="4624">
+  </image>
+  <image id="201" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2538.jpg" width="4080" height="1884">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1649.80" ytl="1209.10" xbr="1780.50" ybr="1240.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2123.00" ytl="1028.20" xbr="2197.30" ybr="1049.30" z_order="0">
+    </box>
+  </image>
+  <image id="202" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2544.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="672.80" ytl="1598.30" xbr="788.60" ybr="1671.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="390.90" ytl="2384.40" xbr="676.00" ybr="2645.40" z_order="0">
+    </box>
+  </image>
+  <image id="203" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2546.png" width="720" height="1280">
+  </image>
+  <image id="204" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2547.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="435.00" ytl="708.90" xbr="522.30" ybr="737.90" z_order="0">
+    </box>
+  </image>
+  <image id="205" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2550.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="845.40" ytl="1135.60" xbr="967.70" ybr="1173.50" z_order="0">
+    </box>
+  </image>
+  <image id="206" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2555.jpg" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="619.60" ytl="1224.70" xbr="686.60" ybr="1266.60" z_order="0">
+    </box>
+  </image>
+  <image id="207" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2556.png" width="352" height="640">
+  </image>
+  <image id="208" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2560.jpg" width="2600" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="267.00" ytl="3304.10" xbr="559.60" ybr="3401.40" z_order="0">
+    </box>
+  </image>
+  <image id="209" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2561.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="286.10" ytl="3057.10" xbr="369.10" ybr="3101.30" z_order="0">
+    </box>
+  </image>
+  <image id="210" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2568.jpg" width="720" height="1280">
+  </image>
+  <image id="211" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2569.jpg" width="1088" height="1920">
+  </image>
+  <image id="212" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2570.jpg" width="352" height="640">
+  </image>
+  <image id="213" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2573.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1045.40" ytl="2721.80" xbr="1258.40" ybr="2792.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1842.90" ytl="2580.10" xbr="2009.10" ybr="2625.40" z_order="0">
+    </box>
+  </image>
+  <image id="214" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2574.png" width="720" height="1280">
+  </image>
+  <image id="215" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2575.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2128.00" ytl="2282.90" xbr="2270.00" ybr="2372.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2657.10" ytl="2191.40" xbr="2806.90" ybr="2279.60" z_order="0">
+    </box>
+  </image>
+  <image id="216" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2576.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="340.70" ytl="2533.20" xbr="818.40" ybr="2670.38" z_order="0">
+    </box>
+  </image>
+  <image id="217" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2582.png" width="352" height="640">
+  </image>
+  <image id="218" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2584.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="723.20" xbr="185.00" ybr="804.50" z_order="0">
+    </box>
+  </image>
+  <image id="219" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2591.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="772.10" xbr="187.70" ybr="845.70" z_order="0">
+    </box>
+  </image>
+  <image id="220" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2592.jpg" width="3472" height="4624">
+  </image>
+  <image id="221" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2593.png" width="720" height="1280">
+  </image>
+  <image id="222" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2597.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="56.20" ytl="909.50" xbr="133.80" ybr="954.40" z_order="0">
+    </box>
+  </image>
+  <image id="223" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2598.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="352.00" ytl="758.50" xbr="432.90" ybr="779.60" z_order="0">
+    </box>
+  </image>
+  <image id="224" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2599.jpg" width="352" height="640">
+    <box label="licence_plate" source="manual" occluded="0" xtl="102.20" ytl="521.90" xbr="190.80" ybr="550.10" z_order="0">
+    </box>
+  </image>
+  <image id="225" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2601.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="409.00" ytl="738.70" xbr="474.92" ybr="756.10" z_order="0">
+    </box>
+  </image>
+  <image id="226" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2604.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="168.70" ytl="951.70" xbr="285.10" ybr="1020.70" z_order="0">
+    </box>
+  </image>
+  <image id="227" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2615.png" width="720" height="1280">
+  </image>
+  <image id="228" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2616.png" width="352" height="640">
+  </image>
+  <image id="229" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2617.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="398.80" ytl="727.80" xbr="472.60" ybr="745.10" z_order="0">
+    </box>
+  </image>
+  <image id="230" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2618.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="441.00" ytl="684.40" xbr="532.70" ybr="709.50" z_order="0">
+    </box>
+  </image>
+  <image id="231" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2620.jpg" width="720" height="1280">
+  </image>
+  <image id="232" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2621.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1281.90" ytl="2099.20" xbr="1370.40" ybr="2135.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="193.00" ytl="2179.60" xbr="385.50" ybr="2238.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="974.60" ytl="2048.40" xbr="1073.50" ybr="2071.70" z_order="0">
+    </box>
+  </image>
+  <image id="233" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2630.png" width="352" height="640">
+  </image>
+  <image id="234" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2634.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1135.90" ytl="2400.00" xbr="1300.00" ybr="2449.00" z_order="0">
+    </box>
+  </image>
+  <image id="235" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2639.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="376.70" ytl="905.30" xbr="462.30" ybr="954.20" z_order="0">
+    </box>
+  </image>
+  <image id="236" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2643.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2009.30" ytl="2073.80" xbr="2398.40" ybr="2370.80" z_order="0">
+    </box>
+  </image>
+  <image id="237" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2647.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1093.27" ytl="2381.70" xbr="1243.00" ybr="2429.10" z_order="0">
+    </box>
+  </image>
+  <image id="238" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2650.jpg" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="903.90" ytl="1853.50" xbr="989.80" ybr="1876.60" z_order="0">
+    </box>
+  </image>
+  <image id="239" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2658.jpg" width="720" height="1280">
+  </image>
+  <image id="240" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2663.png" width="1088" height="1920">
+  </image>
+  <image id="241" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2666.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1931.70" ytl="2176.50" xbr="2077.90" ybr="2220.90" z_order="0">
+    </box>
+  </image>
+  <image id="242" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2667.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="310.60" ytl="680.60" xbr="462.40" ybr="723.50" z_order="0">
+    </box>
+  </image>
+  <image id="243" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2673.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1213.10" ytl="2632.90" xbr="1440.10" ybr="2779.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2014.00" ytl="2317.30" xbr="2090.20" ybr="2370.60" z_order="0">
+    </box>
+  </image>
+  <image id="244" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2676.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="998.80" ytl="2593.30" xbr="1255.60" ybr="2666.20" z_order="0">
+    </box>
+  </image>
+  <image id="245" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2677.png" width="1280" height="720">
+  </image>
+  <image id="246" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2680.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1292.20" ytl="2809.90" xbr="1481.20" ybr="2854.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2186.00" ytl="2815.90" xbr="2353.90" ybr="2862.30" z_order="0">
+    </box>
+  </image>
+  <image id="247" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2681.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1202.30" ytl="2407.10" xbr="1302.00" ybr="2441.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1986.70" ytl="2499.00" xbr="2063.20" ybr="2536.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1360.90" ytl="2545.50" xbr="1471.10" ybr="2596.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="808.90" ytl="2528.80" xbr="926.00" ybr="2584.00" z_order="0">
+    </box>
+  </image>
+  <image id="248" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2683.jpg" width="1088" height="1920">
+  </image>
+  <image id="249" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2684.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="765.30" ytl="3157.30" xbr="1227.50" ybr="3305.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2131.80" ytl="2751.20" xbr="2269.10" ybr="2791.50" z_order="0">
+    </box>
+  </image>
+  <image id="250" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2686.jpg" width="1088" height="1920">
+  </image>
+  <image id="251" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2687.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="532.90" ytl="1015.90" xbr="699.00" ybr="1070.80" z_order="0">
+    </box>
+  </image>
+  <image id="252" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2690.jpg" width="2600" height="4624">
+  </image>
+  <image id="253" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2691.jpg" width="352" height="640">
+  </image>
+  <image id="254" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2692.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1825.70" ytl="2769.50" xbr="1883.00" ybr="2807.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1414.40" ytl="3342.50" xbr="1679.50" ybr="3481.60" z_order="0">
+    </box>
+  </image>
+  <image id="255" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2693.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1340.40" ytl="2997.60" xbr="1479.60" ybr="3040.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="274.00" ytl="2932.30" xbr="411.20" ybr="2963.90" z_order="0">
+    </box>
+  </image>
+  <image id="256" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2695.png" width="720" height="1280">
+  </image>
+  <image id="257" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2701.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="541.10" ytl="2184.30" xbr="692.80" ybr="2236.30" z_order="0">
+    </box>
+  </image>
+  <image id="258" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2703.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="907.10" ytl="2331.90" xbr="1285.40" ybr="2425.60" z_order="0">
+    </box>
+  </image>
+  <image id="259" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2704.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="464.20" ytl="638.60" xbr="557.59" ybr="663.10" z_order="0">
+    </box>
+  </image>
+  <image id="260" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2706.jpg" width="1088" height="1920">
+  </image>
+  <image id="261" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2711.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="852.20" ytl="2871.70" xbr="940.40" ybr="2894.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1523.70" ytl="3002.60" xbr="1678.40" ybr="3051.30" z_order="0">
+    </box>
+  </image>
+  <image id="262" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2720.jpg" width="1088" height="1920">
+  </image>
+  <image id="263" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2724.jpg" width="352" height="640">
+  </image>
+  <image id="264" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2728.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="620.50" ytl="2703.30" xbr="954.40" ybr="2894.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2433.80" ytl="1626.07" xbr="2607.30" ybr="1726.60" z_order="0">
+    </box>
+  </image>
+  <image id="265" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2729.png" width="720" height="1280">
+  </image>
+  <image id="266" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2731.png" width="2134" height="2988">
+  </image>
+  <image id="267" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2732.png" width="3252" height="1567">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1742.00" ytl="1135.60" xbr="1893.00" ybr="1181.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1170.30" ytl="1241.60" xbr="1257.00" ybr="1289.70" z_order="0">
+    </box>
+  </image>
+  <image id="268" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2734.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="723.70" ytl="3093.90" xbr="861.60" ybr="3168.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="311.80" ytl="2822.40" xbr="398.50" ybr="2863.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1754.50" ytl="2966.00" xbr="1951.30" ybr="3015.10" z_order="0">
+    </box>
+  </image>
+  <image id="269" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2737.png" width="2094" height="2933">
+    <box label="licence_plate" source="manual" occluded="0" xtl="944.80" ytl="1962.00" xbr="1055.50" ybr="1991.50" z_order="0">
+    </box>
+  </image>
+  <image id="270" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2740.jpg" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="550.50" ytl="777.40" xbr="707.40" ybr="854.10" z_order="0">
+    </box>
+  </image>
+  <image id="271" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2742.jpg" width="720" height="1280">
+  </image>
+  <image id="272" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2743.jpg" width="720" height="1280">
+  </image>
+  <image id="273" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2746.jpg" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="227.10" ytl="2429.50" xbr="305.40" ybr="2452.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="774.80" ytl="2472.50" xbr="923.00" ybr="2518.60" z_order="0">
+    </box>
+  </image>
+  <image id="274" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2747.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1032.70" ytl="2244.60" xbr="1227.80" ybr="2297.40" z_order="0">
+    </box>
+  </image>
+  <image id="275" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2748.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1187.60" ytl="2818.50" xbr="1323.40" ybr="2850.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1987.90" ytl="2790.30" xbr="2099.30" ybr="2820.10" z_order="0">
+    </box>
+  </image>
+  <image id="276" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2751.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1470.20" ytl="2081.10" xbr="1771.70" ybr="2210.40" z_order="0">
+    </box>
+  </image>
+  <image id="277" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2757.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1615.10" ytl="2336.30" xbr="1751.90" ybr="2424.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2578.60" ytl="2332.80" xbr="2740.90" ybr="2370.80" z_order="0">
+    </box>
+  </image>
+  <image id="278" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2758.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1466.80" ytl="3386.50" xbr="1672.20" ybr="3504.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1857.30" ytl="3110.20" xbr="2107.60" ybr="3198.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2588.30" ytl="3049.00" xbr="2693.40" ybr="3113.20" z_order="0">
+    </box>
+  </image>
+  <image id="279" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2761.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="569.00" ytl="1248.90" xbr="640.30" ybr="1285.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="858.80" ytl="1057.10" xbr="963.80" ybr="1084.80" z_order="0">
+    </box>
+  </image>
+  <image id="280" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2764.jpg" width="3472" height="4624">
+  </image>
+  <image id="281" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2766.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="134.90" ytl="862.30" xbr="223.40" ybr="889.60" z_order="0">
+    </box>
+  </image>
+  <image id="282" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2769.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="579.70" ytl="2360.60" xbr="681.90" ybr="2412.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="886.60" ytl="2038.20" xbr="967.80" ybr="2066.80" z_order="0">
+    </box>
+  </image>
+  <image id="283" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2772.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1951.20" ytl="2203.10" xbr="2114.60" ybr="2253.80" z_order="0">
+    </box>
+  </image>
+  <image id="284" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2773.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="262.65" ytl="2321.08" xbr="381.50" ybr="2357.11" z_order="0">
+    </box>
+  </image>
+  <image id="285" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2774.jpg" width="2600" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="764.43" ytl="1981.41" xbr="923.45" ybr="2038.74" z_order="0">
+    </box>
+  </image>
+  <image id="286" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2781.png" width="720" height="1280">
+  </image>
+  <image id="287" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2786.png" width="352" height="640">
+  </image>
+  <image id="288" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2787.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1367.70" ytl="2319.50" xbr="1452.10" ybr="2342.90" z_order="0">
+    </box>
+  </image>
+  <image id="289" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2790.jpg" width="720" height="1280">
+  </image>
+  <image id="290" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2801.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="549.10" ytl="2876.70" xbr="616.30" ybr="2911.30" z_order="0">
+    </box>
+  </image>
+  <image id="291" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2804.jpg" width="3298" height="2244">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1734.60" ytl="1588.90" xbr="1889.60" ybr="1635.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="589.30" ytl="2102.10" xbr="800.60" ybr="2224.80" z_order="0">
+    </box>
+  </image>
+  <image id="292" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2809.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="806.10" ytl="2289.80" xbr="875.20" ybr="2322.10" z_order="0">
+    </box>
+  </image>
+  <image id="293" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2813.jpg" width="720" height="1280">
+  </image>
+  <image id="294" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2819.jpg" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="283.60" ytl="1048.30" xbr="401.10" ybr="1084.40" z_order="0">
+    </box>
+  </image>
+  <image id="295" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2831.jpg" width="3472" height="4203">
+    <box label="licence_plate" source="manual" occluded="0" xtl="184.90" ytl="3190.20" xbr="438.60" ybr="3299.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1640.60" ytl="3200.70" xbr="1738.40" ybr="3261.20" z_order="0">
+    </box>
+  </image>
+  <image id="296" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2840.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="272.20" ytl="1825.30" xbr="464.30" ybr="1969.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1091.30" ytl="1554.60" xbr="1274.20" ybr="1691.60" z_order="0">
+    </box>
+  </image>
+  <image id="297" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2846.jpg" width="1884" height="4080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="304.42" ytl="2109.78" xbr="650.30" ybr="2200.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1609.40" ytl="1952.30" xbr="1785.30" ybr="2001.60" z_order="0">
+    </box>
+  </image>
+  <image id="298" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2847.png" width="2134" height="2987">
+  </image>
+  <image id="299" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2856.jpg" width="4624" height="3472">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1706.50" ytl="2091.60" xbr="1796.20" ybr="2117.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2601.10" ytl="2458.20" xbr="2720.82" ybr="2524.80" z_order="0">
+    </box>
+  </image>
+  <image id="300" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2866.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1664.70" ytl="2253.60" xbr="1780.80" ybr="2281.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1174.70" ytl="2290.18" xbr="1250.70" ybr="2337.60" z_order="0">
+    </box>
+  </image>
+  <image id="301" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2868.jpg" width="720" height="1280">
+  </image>
+  <image id="302" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2870.jpg" width="3472" height="3605">
+    <box label="licence_plate" source="manual" occluded="0" xtl="888.60" ytl="1471.50" xbr="1327.90" ybr="1629.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="321.90" ytl="2850.10" xbr="976.90" ybr="3273.20" z_order="0">
+    </box>
+  </image>
+  <image id="303" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2885.jpg" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="128.00" ytl="1791.90" xbr="222.00" ybr="1813.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="824.10" ytl="2012.20" xbr="1094.10" ybr="2089.80" z_order="0">
+    </box>
+  </image>
+  <image id="304" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2895.png" width="720" height="1280">
+  </image>
+  <image id="305" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2906.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="387.60" ytl="2125.50" xbr="520.20" ybr="2202.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1232.90" ytl="2541.90" xbr="1504.30" ybr="2705.80" z_order="0">
+    </box>
+  </image>
+  <image id="306" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2909.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2062.50" ytl="2162.60" xbr="2195.20" ybr="2202.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1631.80" ytl="2119.20" xbr="1730.70" ybr="2142.60" z_order="0">
+    </box>
+  </image>
+  <image id="307" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2912.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2811.30" ytl="216.90" xbr="3000.00" ybr="287.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1382.30" ytl="587.20" xbr="1726.00" ybr="806.80" z_order="0">
+    </box>
+  </image>
+  <image id="308" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2927.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1991.70" ytl="2562.30" xbr="2077.40" ybr="2597.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1455.90" ytl="2576.20" xbr="1606.50" ybr="2604.60" z_order="0">
+    </box>
+  </image>
+  <image id="309" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2930.png" width="3472" height="2092">
+    <box label="licence_plate" source="manual" occluded="0" xtl="548.90" ytl="1727.00" xbr="616.90" ybr="1761.60" z_order="0">
+    </box>
+  </image>
+  <image id="310" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2932.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="812.80" ytl="2210.90" xbr="1020.20" ybr="2258.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2031.60" ytl="2378.70" xbr="2248.60" ybr="2431.78" z_order="0">
+    </box>
+  </image>
+  <image id="311" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2946.png" width="3471" height="1808">
+    <box label="licence_plate" source="manual" occluded="0" xtl="438.60" ytl="1259.40" xbr="565.50" ybr="1331.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1153.40" ytl="1284.30" xbr="1229.70" ybr="1304.70" z_order="0">
+    </box>
+  </image>
+  <image id="312" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2948.jpg" width="3472" height="2348">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2645.60" ytl="641.80" xbr="2839.00" ybr="709.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="346.12" ytl="2058.70" xbr="678.00" ybr="2242.10" z_order="0">
+    </box>
+  </image>
+  <image id="313" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2950.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1575.00" ytl="999.80" xbr="1660.41" ybr="1090.26" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2395.30" ytl="899.10" xbr="3096.50" ybr="1180.20" z_order="0">
+    </box>
+  </image>
+  <image id="314" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2951.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="218.90" ytl="2311.60" xbr="524.60" ybr="2393.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1235.30" ytl="2191.10" xbr="1319.60" ybr="2212.20" z_order="0">
+    </box>
+  </image>
+  <image id="315" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2959.png" width="720" height="1280">
+    <box label="licence_plate" source="manual" occluded="0" xtl="446.90" ytl="776.00" xbr="522.60" ybr="814.50" z_order="0">
+    </box>
+  </image>
+  <image id="316" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2965.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2217.20" ytl="2270.60" xbr="2367.70" ybr="2320.30" z_order="0">
+    </box>
+  </image>
+  <image id="317" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2968.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1704.80" ytl="2627.50" xbr="1809.60" ybr="2700.90" z_order="0">
+    </box>
+  </image>
+  <image id="318" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2975.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2752.90" ytl="3274.30" xbr="3099.10" ybr="3371.85" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="573.60" ytl="3269.70" xbr="725.70" ybr="3318.50" z_order="0">
+    </box>
+  </image>
+  <image id="319" name="ML_Model/Clean_Dataset/complex2/Dataset_1/298.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="246.40" ytl="2382.80" xbr="598.20" ybr="2530.20" z_order="0">
+    </box>
+  </image>
+  <image id="320" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2986.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1939.40" ytl="2220.70" xbr="2073.20" ybr="2254.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="830.70" ytl="2111.80" xbr="937.20" ybr="2137.40" z_order="0">
+    </box>
+  </image>
+  <image id="321" name="ML_Model/Clean_Dataset/complex2/Dataset_1/2997.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2002.90" ytl="3785.90" xbr="2228.60" ybr="3945.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1803.70" ytl="2916.60" xbr="1984.70" ybr="3002.20" z_order="0">
+    </box>
+  </image>
+  <image id="322" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3013.jpg" width="4624" height="3472">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1228.70" ytl="1928.20" xbr="1372.80" ybr="1972.50" z_order="0">
+    </box>
+  </image>
+  <image id="323" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3017.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2573.60" ytl="2470.40" xbr="2745.20" ybr="2516.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1209.10" ytl="2322.40" xbr="1337.70" ybr="2386.10" z_order="0">
+    </box>
+  </image>
+  <image id="324" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3020.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2632.00" ytl="2544.50" xbr="2835.10" ybr="2620.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2859.50" ytl="3454.70" xbr="3130.30" ybr="3654.20" z_order="0">
+    </box>
+  </image>
+  <image id="325" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3025.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="836.20" ytl="2213.70" xbr="910.10" ybr="2252.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1474.50" ytl="2152.20" xbr="1777.00" ybr="2236.20" z_order="0">
+    </box>
+  </image>
+  <image id="326" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3051.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="483.50" ytl="2011.40" xbr="583.40" ybr="2069.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1645.20" ytl="1939.70" xbr="1745.20" ybr="1998.20" z_order="0">
+    </box>
+  </image>
+  <image id="327" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3053.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2371.84" ytl="2681.40" xbr="2517.50" ybr="2767.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="390.77" ytl="2955.50" xbr="642.80" ybr="3102.60" z_order="0">
+    </box>
+  </image>
+  <image id="328" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3057.png" width="3472" height="2335">
+    <box label="licence_plate" source="manual" occluded="0" xtl="770.00" ytl="1672.30" xbr="889.30" ybr="1730.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1767.70" ytl="1344.10" xbr="1897.50" ybr="1385.80" z_order="0">
+    </box>
+  </image>
+  <image id="329" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3059.png" width="3309" height="2036">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1705.60" ytl="1005.30" xbr="1802.40" ybr="1034.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="1666.00" xbr="174.00" ybr="1790.60" z_order="0">
+    </box>
+  </image>
+  <image id="330" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3082.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="890.70" ytl="2484.60" xbr="1332.60" ybr="2650.10" z_order="0">
+    </box>
+  </image>
+  <image id="331" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3085.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2657.30" ytl="1024.50" xbr="3001.30" ybr="1363.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1413.50" ytl="1610.50" xbr="1847.10" ybr="2010.30" z_order="0">
+    </box>
+  </image>
+  <image id="332" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3099.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="788.00" ytl="2182.30" xbr="894.30" ybr="2211.80" z_order="0">
+    </box>
+  </image>
+  <image id="333" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3101.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1720.80" ytl="2870.40" xbr="1858.00" ybr="2908.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="224.50" ytl="2925.00" xbr="442.40" ybr="2982.20" z_order="0">
+    </box>
+  </image>
+  <image id="334" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3106.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="392.87" ytl="2145.22" xbr="524.70" ybr="2189.70" z_order="0">
+    </box>
+  </image>
+  <image id="335" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3114.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2465.60" ytl="948.00" xbr="2566.40" ybr="986.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1222.90" ytl="817.30" xbr="1375.10" ybr="881.30" z_order="0">
+    </box>
+  </image>
+  <image id="336" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3116.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="865.90" ytl="2429.30" xbr="996.80" ybr="2469.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1208.50" ytl="2388.20" xbr="1282.60" ybr="2408.90" z_order="0">
+    </box>
+  </image>
+  <image id="337" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3125.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1483.90" ytl="2190.20" xbr="1606.50" ybr="2229.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="333.20" ytl="2133.50" xbr="464.70" ybr="2208.60" z_order="0">
+    </box>
+  </image>
+  <image id="338" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3135.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1294.70" ytl="2297.90" xbr="1535.10" ybr="2386.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="2327.50" xbr="102.40" ybr="2390.40" z_order="0">
+    </box>
+  </image>
+  <image id="339" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3137.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1103.40" ytl="2436.60" xbr="1251.90" ybr="2474.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1841.40" ytl="2445.40" xbr="1901.80" ybr="2494.50" z_order="0">
+    </box>
+  </image>
+  <image id="340" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3138.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="548.70" ytl="2876.80" xbr="616.60" ybr="2911.30" z_order="0">
+    </box>
+  </image>
+  <image id="341" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3139.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="985.80" ytl="1010.80" xbr="1401.50" ybr="1152.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2821.50" ytl="805.70" xbr="2963.90" ybr="847.70" z_order="0">
+    </box>
+  </image>
+  <image id="342" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3141.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="503.00" ytl="2501.60" xbr="724.50" ybr="2608.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="904.50" ytl="2256.50" xbr="1103.20" ybr="2335.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1545.60" ytl="2206.70" xbr="1643.50" ybr="2264.30" z_order="0">
+    </box>
+  </image>
+  <image id="343" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3142.jpg" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="74.00" ytl="2394.30" xbr="203.70" ybr="2479.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1939.60" ytl="2246.20" xbr="2036.20" ybr="2309.40" z_order="0">
+    </box>
+  </image>
+  <image id="344" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3145.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1307.20" ytl="2248.70" xbr="1526.20" ybr="2420.60" z_order="0">
+    </box>
+  </image>
+  <image id="345" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3162.png" width="3471" height="2676">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1783.90" ytl="1590.90" xbr="2009.20" ybr="1676.00" z_order="0">
+    </box>
+  </image>
+  <image id="346" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3164.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="889.80" ytl="1124.10" xbr="1207.50" ybr="1399.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1147.30" ytl="634.40" xbr="1407.20" ybr="710.30" z_order="0">
+    </box>
+  </image>
+  <image id="347" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3192.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1153.50" ytl="2358.00" xbr="1335.30" ybr="2410.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1771.50" ytl="2351.20" xbr="1860.50" ybr="2397.40" z_order="0">
+    </box>
+  </image>
+  <image id="348" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3205.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1121.50" ytl="2575.60" xbr="1256.70" ybr="2608.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1715.80" ytl="2523.00" xbr="1783.20" ybr="2543.20" z_order="0">
+    </box>
+  </image>
+  <image id="349" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3207.jpg" width="1800" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1384.70" ytl="517.60" xbr="1445.00" ybr="560.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="551.40" ytl="1494.00" xbr="1027.80" ybr="1727.30" z_order="0">
+    </box>
+  </image>
+  <image id="350" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3209.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1425.10" ytl="1153.90" xbr="1968.76" ybr="1546.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2744.40" ytl="318.30" xbr="2898.10" ybr="451.10" z_order="0">
+    </box>
+  </image>
+  <image id="351" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3232.jpg" width="4000" height="3000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1258.10" ytl="1217.40" xbr="1428.20" ybr="1341.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2019.60" ytl="975.90" xbr="2199.30" ybr="1114.70" z_order="0">
+    </box>
+  </image>
+  <image id="352" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3235.jpg" width="3472" height="4624">
+  </image>
+  <image id="353" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3244.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1567.50" ytl="2476.00" xbr="1771.50" ybr="2540.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2056.60" ytl="2263.50" xbr="2128.00" ybr="2285.50" z_order="0">
+    </box>
+  </image>
+  <image id="354" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3245.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1704.10" ytl="2029.00" xbr="1813.60" ybr="2103.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="101.00" ytl="2202.30" xbr="518.50" ybr="2355.20" z_order="0">
+    </box>
+  </image>
+  <image id="355" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3250.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1489.60" ytl="2203.30" xbr="1567.70" ybr="2252.40" z_order="0">
+    </box>
+  </image>
+  <image id="356" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3257.png" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="645.70" ytl="2083.40" xbr="738.20" ybr="2120.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1466.90" ytl="2309.70" xbr="1575.10" ybr="2369.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="820.70" ytl="2793.75" xbr="1017.90" ybr="2917.30" z_order="0">
+    </box>
+  </image>
+  <image id="357" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3258.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1725.40" ytl="2669.10" xbr="1862.70" ybr="2712.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="842.90" ytl="2542.50" xbr="920.80" ybr="2567.90" z_order="0">
+    </box>
+  </image>
+  <image id="358" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3263.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1357.70" ytl="2231.50" xbr="1428.00" ybr="2247.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1015.20" ytl="2247.13" xbr="1123.70" ybr="2283.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2099.60" ytl="2375.80" xbr="2256.10" ybr="2414.00" z_order="0">
+    </box>
+  </image>
+  <image id="359" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3264.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="682.80" ytl="2337.30" xbr="773.40" ybr="2380.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1291.90" ytl="2143.60" xbr="1352.30" ybr="2163.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1647.10" ytl="2219.90" xbr="1860.10" ybr="2283.80" z_order="0">
+    </box>
+  </image>
+  <image id="360" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3265.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1566.40" ytl="2050.90" xbr="1686.30" ybr="2116.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="483.90" ytl="3344.10" xbr="856.80" ybr="3552.90" z_order="0">
+    </box>
+  </image>
+  <image id="361" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3268.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2700.00" ytl="2618.60" xbr="2821.20" ybr="2696.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1815.60" ytl="2519.70" xbr="2331.90" ybr="2718.00" z_order="0">
+    </box>
+  </image>
+  <image id="362" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3269.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2518.20" ytl="1060.90" xbr="2828.70" ybr="1252.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1460.60" ytl="1465.40" xbr="1905.90" ybr="1786.40" z_order="0">
+    </box>
+  </image>
+  <image id="363" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3277.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1961.70" ytl="2059.50" xbr="2134.00" ybr="2122.90" z_order="0">
+    </box>
+  </image>
+  <image id="364" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3281.jpg" width="3472" height="4624">
+  </image>
+  <image id="365" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3284.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1600.30" ytl="1098.70" xbr="2043.00" ybr="1217.20" z_order="0">
+    </box>
+  </image>
+  <image id="366" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3291.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="571.40" ytl="3268.10" xbr="725.50" ybr="3319.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2754.10" ytl="3271.80" xbr="3099.50" ybr="3373.00" z_order="0">
+    </box>
+  </image>
+  <image id="367" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3298.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2104.49" ytl="3135.60" xbr="2310.20" ybr="3267.00" z_order="0">
+    </box>
+  </image>
+  <image id="368" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3300.png" width="1084" height="658">
+    <box label="licence_plate" source="manual" occluded="0" xtl="762.90" ytl="425.10" xbr="846.50" ybr="451.30" z_order="0">
+    </box>
+  </image>
+  <image id="369" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3328.jpg" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="873.20" ytl="2433.40" xbr="953.60" ybr="2453.20" z_order="0">
+    </box>
+  </image>
+  <image id="370" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3342.jpg" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1362.90" ytl="1909.60" xbr="1446.60" ybr="1974.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="469.10" ytl="2311.40" xbr="557.90" ybr="2358.10" z_order="0">
+    </box>
+  </image>
+  <image id="371" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3347.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1610.30" ytl="3098.40" xbr="2056.80" ybr="3269.80" z_order="0">
+    </box>
+  </image>
+  <image id="372" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3349.png" width="720" height="1280">
+  </image>
+  <image id="373" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3350.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="3273.40" ytl="2047.80" xbr="3418.50" ybr="2134.70" z_order="0">
+    </box>
+  </image>
+  <image id="374" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3377.jpg" width="2600" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2161.80" ytl="2233.00" xbr="2345.00" ybr="2350.20" z_order="0">
+    </box>
+  </image>
+  <image id="375" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3383.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1419.30" ytl="1130.10" xbr="1533.70" ybr="1220.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="5.90" ytl="1115.50" xbr="309.90" ybr="1188.30" z_order="0">
+    </box>
+  </image>
+  <image id="376" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3393.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2137.30" ytl="2775.80" xbr="2270.70" ybr="2850.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1202.40" ytl="2809.70" xbr="1317.00" ybr="2881.10" z_order="0">
+    </box>
+  </image>
+  <image id="377" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3394.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="271.00" ytl="3156.80" xbr="393.20" ybr="3226.90" z_order="0">
+    </box>
+  </image>
+  <image id="378" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3400.png" width="2134" height="2988">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1437.30" ytl="1585.70" xbr="1580.10" ybr="1713.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1410.21" ytl="2067.20" xbr="1757.10" ybr="2331.50" z_order="0">
+    </box>
+  </image>
+  <image id="379" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3405.jpg" width="2600" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1113.90" ytl="2436.80" xbr="1348.80" ybr="2523.40" z_order="0">
+    </box>
+  </image>
+  <image id="380" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3407.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="224.50" ytl="2923.90" xbr="443.69" ybr="2982.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1720.70" ytl="2869.90" xbr="1857.90" ybr="2908.20" z_order="0">
+    </box>
+  </image>
+  <image id="381" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3414.jpg" width="4624" height="3472">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2542.80" ytl="2132.60" xbr="2631.20" ybr="2182.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2018.48" ytl="2133.30" xbr="2110.95" ybr="2186.06" z_order="0">
+    </box>
+  </image>
+  <image id="382" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3417.png" width="2134" height="2988">
+  </image>
+  <image id="383" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3418.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1832.20" ytl="2227.30" xbr="1912.30" ybr="2250.40" z_order="0">
+    </box>
+  </image>
+  <image id="384" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3437.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="813.00" ytl="1486.80" xbr="907.60" ybr="1553.50" z_order="0">
+    </box>
+  </image>
+  <image id="385" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3445.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1249.95" ytl="1568.00" xbr="1578.00" ybr="1818.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="984.90" ytl="288.90" xbr="1324.20" ybr="646.70" z_order="0">
+    </box>
+  </image>
+  <image id="386" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3447.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2554.30" ytl="2389.60" xbr="2700.20" ybr="2427.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1848.40" ytl="2245.00" xbr="1937.50" ybr="2307.50" z_order="0">
+    </box>
+  </image>
+  <image id="387" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3452.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="860.30" ytl="1238.10" xbr="1317.30" ybr="1535.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="118.90" ytl="228.40" xbr="209.80" ybr="261.60" z_order="0">
+    </box>
+  </image>
+  <image id="388" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3466.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="341.90" ytl="1508.30" xbr="433.80" ybr="1564.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="264.80" ytl="1273.80" xbr="319.50" ybr="1305.90" z_order="0">
+    </box>
+  </image>
+  <image id="389" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3470.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1821.80" ytl="2926.70" xbr="1965.70" ybr="2972.90" z_order="0">
+    </box>
+  </image>
+  <image id="390" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3484.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2193.30" ytl="2451.80" xbr="2377.20" ybr="2498.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="138.80" ytl="2603.10" xbr="401.30" ybr="2681.40" z_order="0">
+    </box>
+  </image>
+  <image id="391" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3490.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1372.20" ytl="3203.30" xbr="1663.00" ybr="3377.80" z_order="0">
+    </box>
+  </image>
+  <image id="392" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3495.jpg" width="2134" height="2987">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1492.10" ytl="1539.80" xbr="1619.40" ybr="1606.90" z_order="0">
+    </box>
+  </image>
+  <image id="393" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3498.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1555.10" ytl="2553.30" xbr="1650.24" ybr="2581.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1847.50" ytl="2655.10" xbr="2006.40" ybr="2693.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="281.20" ytl="2919.40" xbr="533.00" ybr="2997.50" z_order="0">
+    </box>
+  </image>
+  <image id="394" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3503.jpg" width="2600" height="4624">
+  </image>
+  <image id="395" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3521.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2366.70" ytl="589.40" xbr="2443.00" ybr="646.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1471.50" ytl="1481.30" xbr="1701.10" ybr="1652.20" z_order="0">
+    </box>
+  </image>
+  <image id="396" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3547.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1045.90" ytl="2721.30" xbr="1259.40" ybr="2793.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1842.70" ytl="2580.40" xbr="2009.10" ybr="2625.30" z_order="0">
+    </box>
+  </image>
+  <image id="397" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3558.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1187.30" ytl="1080.10" xbr="1593.20" ybr="1201.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="144.60" ytl="438.20" xbr="326.61" ybr="527.60" z_order="0">
+    </box>
+  </image>
+  <image id="398" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3563.jpg" width="2134" height="2988">
+  </image>
+  <image id="399" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3566.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2191.80" ytl="2289.10" xbr="2262.40" ybr="2327.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="633.70" ytl="2552.70" xbr="843.20" ybr="2611.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2747.10" ytl="2298.00" xbr="2850.30" ybr="2323.10" z_order="0">
+    </box>
+  </image>
+  <image id="400" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3571.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="3026.10" ytl="2703.90" xbr="3179.80" ybr="2746.50" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="977.00" ytl="2584.60" xbr="1212.33" ybr="2679.60" z_order="0">
+    </box>
+  </image>
+  <image id="401" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3572.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="152.40" ytl="1476.70" xbr="246.30" ybr="1529.90" z_order="0">
+    </box>
+  </image>
+  <image id="402" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3577.jpg" width="2136" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="672.70" ytl="2416.70" xbr="788.70" ybr="2489.90" z_order="0">
+    </box>
+  </image>
+  <image id="403" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3582.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="357.80" ytl="3109.50" xbr="982.90" ybr="3453.70" z_order="0">
+    </box>
+  </image>
+  <image id="404" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3583.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="0.00" ytl="3215.50" xbr="165.60" ybr="3308.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1877.40" ytl="2400.30" xbr="2011.30" ybr="2508.40" z_order="0">
+    </box>
+  </image>
+  <image id="405" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3600.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2576.73" ytl="2331.60" xbr="2741.40" ybr="2371.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1616.00" ytl="2336.30" xbr="1752.30" ybr="2422.20" z_order="0">
+    </box>
+  </image>
+  <image id="406" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3604.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1716.04" ytl="1194.00" xbr="1804.10" ybr="1228.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2360.90" ytl="1393.50" xbr="2538.40" ybr="1465.50" z_order="0">
+    </box>
+  </image>
+  <image id="407" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3611.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1214.20" ytl="1957.00" xbr="1384.20" ybr="2061.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2125.40" ytl="3089.80" xbr="2485.60" ybr="3342.00" z_order="0">
+    </box>
+  </image>
+  <image id="408" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3614.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="105.80" ytl="2968.00" xbr="195.50" ybr="3018.10" z_order="0">
+    </box>
+  </image>
+  <image id="409" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3635.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="887.70" ytl="2491.70" xbr="1326.00" ybr="2641.00" z_order="0">
+    </box>
+  </image>
+  <image id="410" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3637.jpg" width="1884" height="4080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1199.60" ytl="1992.90" xbr="1467.10" ybr="2056.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="318.00" ytl="2430.80" xbr="486.20" ybr="2513.10" z_order="0">
+    </box>
+  </image>
+  <image id="411" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3656.png" width="1877" height="2500">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1253.90" ytl="1362.90" xbr="1320.50" ybr="1435.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1770.30" ytl="1106.80" xbr="1848.30" ybr="1153.50" z_order="0">
+    </box>
+  </image>
+  <image id="412" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3660.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="223.41" ytl="2310.50" xbr="522.20" ybr="2394.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1233.10" ytl="2188.80" xbr="1322.60" ybr="2212.50" z_order="0">
+    </box>
+  </image>
+  <image id="413" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3663.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="984.90" ytl="3521.00" xbr="1183.70" ybr="3641.20" z_order="0">
+    </box>
+  </image>
+  <image id="414" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3669.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1651.90" ytl="2110.60" xbr="1759.60" ybr="2169.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1856.30" ytl="1989.00" xbr="1900.30" ybr="2019.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="3148.80" ytl="2992.80" xbr="3471.60" ybr="3185.70" z_order="0">
+    </box>
+  </image>
+  <image id="415" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3673.jpg" width="1884" height="4080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="887.30" ytl="2062.00" xbr="1000.20" ybr="2089.70" z_order="0">
+    </box>
+  </image>
+  <image id="416" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3674.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="229.90" ytl="3194.30" xbr="429.80" ybr="3293.90" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2254.30" ytl="2361.00" xbr="2421.50" ybr="2488.40" z_order="0">
+    </box>
+  </image>
+  <image id="417" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3681.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="878.80" ytl="2547.00" xbr="1068.60" ybr="2598.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1968.80" ytl="2220.10" xbr="2035.40" ybr="2239.20" z_order="0">
+    </box>
+  </image>
+  <image id="418" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3682.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1650.20" ytl="1092.00" xbr="1921.00" ybr="1275.40" z_order="0">
+    </box>
+  </image>
+  <image id="419" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3691.png" width="1088" height="1920">
+    <box label="licence_plate" source="manual" occluded="0" xtl="679.40" ytl="1476.00" xbr="770.70" ybr="1538.30" z_order="0">
+    </box>
+  </image>
+  <image id="420" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3694.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="328.30" ytl="2534.30" xbr="432.90" ybr="2563.00" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1448.90" ytl="2689.20" xbr="1599.30" ybr="2728.20" z_order="0">
+    </box>
+  </image>
+  <image id="421" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3695.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="264.10" ytl="2062.10" xbr="377.30" ybr="2125.80" z_order="0">
+    </box>
+  </image>
+  <image id="422" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3697.jpg" width="3472" height="4624">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1577.60" ytl="2860.00" xbr="1726.70" ybr="2902.40" z_order="0">
+    </box>
+  </image>
+  <image id="423" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3698.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1434.40" ytl="1558.20" xbr="1709.10" ybr="1743.20" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1969.80" ytl="1337.90" xbr="2291.60" ybr="1443.30" z_order="0">
+    </box>
+  </image>
+  <image id="424" name="ML_Model/Clean_Dataset/complex2/Dataset_1/3700.png" width="1088" height="1920">
+  </image>
+  <image id="425" name="ML_Model/Clean_Dataset/complex2/Dataset_1/426.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2433.80" ytl="1170.40" xbr="2505.10" ybr="1185.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1365.60" ytl="1263.50" xbr="1491.30" ybr="1358.80" z_order="0">
+    </box>
+  </image>
+  <image id="426" name="ML_Model/Clean_Dataset/complex2/Dataset_1/579.jpg" width="3008" height="4016">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1144.30" ytl="1561.80" xbr="1228.40" ybr="1629.10" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="412.90" ytl="1618.20" xbr="536.10" ybr="1692.72" z_order="0">
+    </box>
+  </image>
+  <image id="427" name="ML_Model/Clean_Dataset/complex2/Dataset_1/651.jpg" width="672" height="406">
+    <box label="licence_plate" source="manual" occluded="0" xtl="341.10" ytl="307.80" xbr="481.70" ybr="354.70" z_order="0">
+    </box>
+  </image>
+  <image id="428" name="ML_Model/Clean_Dataset/complex2/Dataset_1/653.jpg" width="4160" height="3120">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1945.40" ytl="1832.30" xbr="2019.60" ybr="1898.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="99.30" ytl="2060.76" xbr="258.60" ybr="2103.00" z_order="0">
+    </box>
+  </image>
+  <image id="429" name="ML_Model/Clean_Dataset/complex2/Dataset_1/715.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1656.90" ytl="1550.40" xbr="1763.00" ybr="1611.70" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1281.70" ytl="2360.10" xbr="1489.90" ybr="2485.10" z_order="0">
+    </box>
+  </image>
+  <image id="430" name="ML_Model/Clean_Dataset/complex2/Dataset_1/752.jpg" width="675" height="505">
+    <box label="licence_plate" source="manual" occluded="0" xtl="345.10" ytl="174.10" xbr="432.20" ybr="202.10" z_order="0">
+    </box>
+  </image>
+  <image id="431" name="ML_Model/Clean_Dataset/complex2/Dataset_1/762.jpg" width="1920" height="1080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="552.30" ytl="280.30" xbr="896.10" ybr="401.70" z_order="0">
+    </box>
+  </image>
+  <image id="432" name="ML_Model/Clean_Dataset/complex2/Dataset_1/768.jpg" width="485" height="666">
+    <box label="licence_plate" source="manual" occluded="0" xtl="164.60" ytl="461.20" xbr="247.10" ybr="484.50" z_order="0">
+    </box>
+  </image>
+  <image id="433" name="ML_Model/Clean_Dataset/complex2/Dataset_1/776.jpeg" width="750" height="640">
+    <box label="licence_plate" source="manual" occluded="0" xtl="295.00" ytl="310.30" xbr="560.40" ybr="389.80" z_order="0">
+    </box>
+  </image>
+  <image id="434" name="ML_Model/Clean_Dataset/complex2/Dataset_1/778.jpeg" width="492" height="393">
+    <box label="licence_plate" source="manual" occluded="0" xtl="344.20" ytl="198.60" xbr="421.80" ybr="222.90" z_order="0">
+    </box>
+  </image>
+  <image id="435" name="ML_Model/Clean_Dataset/complex2/Dataset_1/826.jpg" width="700" height="525">
+    <box label="licence_plate" source="manual" occluded="0" xtl="92.40" ytl="329.50" xbr="229.10" ybr="395.60" z_order="0">
+    </box>
+  </image>
+  <image id="436" name="ML_Model/Clean_Dataset/complex2/Dataset_1/827.jpg" width="827" height="510">
+    <box label="licence_plate" source="manual" occluded="0" xtl="344.50" ytl="268.10" xbr="577.80" ybr="328.30" z_order="0">
+    </box>
+  </image>
+  <image id="437" name="ML_Model/Clean_Dataset/complex2/Dataset_1/834.jpg" width="389" height="1003">
+    <box label="licence_plate" source="manual" occluded="0" xtl="86.70" ytl="722.20" xbr="183.90" ybr="797.20" z_order="0">
+    </box>
+  </image>
+  <image id="438" name="ML_Model/Clean_Dataset/complex2/Dataset_1/838.jpeg" width="1000" height="562">
+    <box label="licence_plate" source="manual" occluded="0" xtl="464.30" ytl="289.20" xbr="556.50" ybr="344.30" z_order="0">
+    </box>
+  </image>
+  <image id="439" name="ML_Model/Clean_Dataset/complex2/Dataset_1/839.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="174.60" ytl="1376.60" xbr="339.30" ybr="1416.80" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="1223.20" ytl="1568.30" xbr="1483.60" ybr="1638.00" z_order="0">
+    </box>
+  </image>
+  <image id="440" name="ML_Model/Clean_Dataset/complex2/Dataset_1/840.jpeg" width="602" height="339">
+    <box label="licence_plate" source="manual" occluded="0" xtl="121.00" ytl="164.00" xbr="243.80" ybr="201.50" z_order="0">
+    </box>
+  </image>
+  <image id="441" name="ML_Model/Clean_Dataset/complex2/Dataset_1/842.jpeg" width="400" height="300">
+    <box label="licence_plate" source="manual" occluded="0" xtl="151.43" ytl="193.00" xbr="252.20" ybr="219.50" z_order="0">
+    </box>
+  </image>
+  <image id="442" name="ML_Model/Clean_Dataset/complex2/Dataset_1/846.jpg" width="1738" height="1032">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1218.30" ytl="231.50" xbr="1621.30" ybr="347.00" z_order="0">
+    </box>
+  </image>
+  <image id="443" name="ML_Model/Clean_Dataset/complex2/Dataset_1/851.jpg" width="785" height="771">
+    <box label="licence_plate" source="manual" occluded="0" xtl="138.70" ytl="427.30" xbr="290.00" ybr="477.10" z_order="0">
+    </box>
+  </image>
+  <image id="444" name="ML_Model/Clean_Dataset/complex2/Dataset_1/857.jpg" width="3120" height="4160">
+    <box label="licence_plate" source="manual" occluded="0" xtl="2196.30" ytl="2176.07" xbr="2314.50" ybr="2280.70" z_order="0">
+    </box>
+  </image>
+  <image id="445" name="ML_Model/Clean_Dataset/complex2/Dataset_1/859.jpeg" width="768" height="1024">
+    <box label="licence_plate" source="manual" occluded="0" xtl="294.20" ytl="416.20" xbr="560.20" ybr="496.10" z_order="0">
+    </box>
+  </image>
+  <image id="446" name="ML_Model/Clean_Dataset/complex2/Dataset_1/905.jpeg" width="640" height="555">
+    <box label="licence_plate" source="manual" occluded="0" xtl="443.20" ytl="257.60" xbr="639.96" ybr="349.10" z_order="0">
+    </box>
+  </image>
+  <image id="447" name="ML_Model/Clean_Dataset/complex2/Dataset_1/914.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="246.00" ytl="2382.50" xbr="598.70" ybr="2529.10" z_order="0">
+    </box>
+  </image>
+  <image id="448" name="ML_Model/Clean_Dataset/complex2/Dataset_1/923.jpg" width="1022" height="1080">
+    <box label="licence_plate" source="manual" occluded="0" xtl="160.20" ytl="498.20" xbr="369.00" ybr="576.30" z_order="0">
+    </box>
+  </image>
+  <image id="449" name="ML_Model/Clean_Dataset/complex2/Dataset_1/933.jpg" width="1501" height="1079">
+    <box label="licence_plate" source="manual" occluded="0" xtl="221.10" ytl="609.00" xbr="301.90" ybr="672.30" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="691.40" ytl="460.10" xbr="892.10" ybr="531.40" z_order="0">
+    </box>
+  </image>
+  <image id="450" name="ML_Model/Clean_Dataset/complex2/Dataset_1/950.jpg" width="389" height="1003">
+    <box label="licence_plate" source="manual" occluded="0" xtl="86.70" ytl="720.60" xbr="184.60" ybr="797.60" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="51.50" ytl="327.70" xbr="125.30" ybr="358.50" z_order="0">
+    </box>
+  </image>
+  <image id="451" name="ML_Model/Clean_Dataset/complex2/Dataset_1/954.jpg" width="3000" height="4000">
+    <box label="licence_plate" source="manual" occluded="0" xtl="1365.10" ytl="1263.90" xbr="1492.20" ybr="1361.40" z_order="0">
+    </box>
+    <box label="licence_plate" source="manual" occluded="0" xtl="2433.70" ytl="1170.20" xbr="2506.00" ybr="1185.40" z_order="0">
+    </box>
+  </image>
+  <image id="452" name="ML_Model/Clean_Dataset/complex2/Dataset_1/973.jpg" width="327" height="543">
+    <box label="licence_plate" source="manual" occluded="0" xtl="62.10" ytl="437.56" xbr="122.30" ybr="456.10" z_order="0">
+    </box>
+  </image>
+</annotations>

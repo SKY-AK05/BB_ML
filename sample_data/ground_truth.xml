@@ -1,0 +1,9 @@
+<annotations>
+  <image name="sample1.jpg">
+    <box label="person" xtl="50" ytl="30" xbr="150" ybr="200"/>
+    <box label="car" xtl="200" ytl="100" xbr="350" ybr="250"/>
+  </image>
+  <image name="sample2.jpg">
+    <box label="person" xtl="100" ytl="50" xbr="200" ybr="220"/>
+  </image>
+</annotations>

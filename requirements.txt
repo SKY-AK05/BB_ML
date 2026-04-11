@@ -1,0 +1,17 @@
+# AnnotCheck Desktop - Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core data processing
+pandas>=1.5.0
+lxml>=4.9.0
+
+# Web framework
+Flask>=2.3.0
+Flask-CORS>=4.0.0
+
+# Image processing
+Pillow>=9.5.0
+
+# Optional: For advanced features (uncomment if needed)
+# pyngrok>=7.0.0  # For public tunneling (optional)
+# numpy>=1.24.0   # For numerical operations (often used with pandas)
