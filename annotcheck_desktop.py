@@ -1541,6 +1541,13 @@ def build_html(mode="flask"):
 def index():
     return Response(build_html("flask"), mimetype="text/html")
 
+@app.route("/favicon.ico")
+def favicon():
+    # Return a simple 1x1 transparent PNG as favicon
+    import base64
+    favicon_data = base64.b64decode("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==")
+    return Response(favicon_data, mimetype="image/x-icon")
+
 @app.route("/api/students")
 def api_students():
     return jsonify(sorted(all_student_annots.keys()))
