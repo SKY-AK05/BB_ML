@@ -29,135 +29,88 @@ def main():
     if Path("annotation_project").exists():
         shutil.copytree("annotation_project", public_dir / "annotation_project", dirs_exist_ok=True)
     
-    # Create static HTML version for Vercel deployment
-    index_html = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnnotCheck - Annotation Quality Assessment</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-    <style>
-        :root{
-          --mint:#b8f0d8;--yellow:#ffe033;--purple:#9b5de5;
-          --cyan:#00e5c0;--red:#ff4757;--green:#3ddc97;
-          --black:#111;--white:#fff;--gray:#f4f4f0;
-          --border:2.5px solid #111;--radius:14px;
-          --head:'Fredoka One',cursive;--body:'Nunito',sans-serif;
-        }
-        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-        html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hidden;color:var(--black)}
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            text-align: center;
-        }
-        .title {
-            font-family:var(--head);
-            font-size: 3rem;
-            color:var(--purple);
-            margin-bottom: 1rem;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            color:var(--black);
-            margin-bottom: 2rem;
-        }
-        .card {
-            background:var(--white);
-            border:var(--border);
-            border-radius:var(--radius);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 5px 5px 0 var(--black);
-        }
-        .card h3 {
-            font-family:var(--head);
-            color:var(--purple);
-            margin-bottom: 1rem;
-        }
-        .btn {
-            background:var(--purple);
-            color:var(--white);
-            border:var(--border);
-            border-radius:8px;
-            padding: 12px 24px;
-            font-family:var(--head);
-            font-size:16px;
-            cursor:pointer;
-            text-decoration:none;
-            display:inline-block;
-            margin: 0.5rem;
-            transition:transform 0.1s;
-        }
-        .btn:hover {
-            transform:scale(1.05);
-        }
-        .btn:active {
-            transform:scale(0.95);
-        }
-        .warning {
-            background:var(--yellow);
-            color:var(--black);
-            padding: 1rem;
-            border-radius:8px;
-            margin: 1rem 0;
-            border:2px solid var(--black);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">ANNOT<span style="color:var(--purple)">.</span>CHECK</h1>
-        <p class="subtitle">Annotation Quality Assessment Tool</p>
-        
-        <div class="card">
-            <h3>?? Static Deployment Mode</h3>
-            <p>This is a static version of AnnotCheck deployed on Vercel.</p>
-            <p>The full dashboard with student analysis requires a local server environment.</p>
-            
-            <div class="warning">
-                <strong>?? Note:</strong> For the complete interactive dashboard with real-time feedback and scoring, please run the application locally using the Python script.
-            </div>
-            
-            <h3>?? Features Available:</h3>
-            <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
-                <li>?? Comprehensive annotation rules and guidelines</li>
-                <li>?? Personalized feedback system design</li>
-                <li>?? Student performance analysis framework</li>
-                <li>?? No-numbers motivational feedback approach</li>
-            </ul>
-            
-            <h3>?? To Run Full Version Locally:</h3>
-            <div style="background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0;">
-                <code style="display: block; text-align: left; background: #fff; padding: 1rem; border-radius: 4px;">
-                    git clone https://github.com/SKY-AK05/BB_ML.git<br>
-                    cd annotcheck_deploy<br>
-                    python annotcheck_desktop.py
-                </code>
-            </div>
-            
-            <div style="margin-top: 2rem;">
-                <a href="https://github.com/SKY-AK05/BB_ML" class="btn">?? View on GitHub</a>
-                <a href="mailto:your-email@example.com" class="btn">?? Contact Support</a>
-            </div>
-        </div>
-        
-        <div class="card">
-            <h3>?? Recent Updates</h3>
-            <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
-                <li>?? Implemented comprehensive no-numbers feedback system</li>
-                <li>?? Added personalized student performance analysis</li>
-                <li>?? Updated annotation rules with 80% confidence requirement</li>
-                <li>?? Enhanced UI with encouraging, actionable guidance</li>
-                <li>?? Fixed Vercel deployment configuration</li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>"""
+    # Create static dashboard HTML from the Flask app
+    # Extract the dashboard HTML from annotcheck_desktop.py
+    with open("annotcheck_desktop.py", "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    # Find the DASHBOARD_HTML section
+    start_marker = 'DASHBOARD_HTML = r"""'
+    end_marker = '"""'
+    
+    start_idx = content.find(start_marker)
+    if start_idx == -1:
+        print("Error: Could not find DASHBOARD_HTML in annotcheck_desktop.py")
+        return
+    
+    start_idx += len(start_marker)
+    end_idx = content.find(end_marker, start_idx)
+    
+    if end_idx == -1:
+        print("Error: Could not find end of DASHBOARD_HTML")
+        return
+    
+    dashboard_html = content[start_idx:end_idx]
+    
+    # Replace Flask-specific placeholders for static deployment
+    dashboard_html = dashboard_html.replace('__DATA_MODE__', 'static')
+    dashboard_html = dashboard_html.replace('__ADMIN_HASH__', 'static_admin_hash')
+    
+    # Add static data and modify JavaScript to work without Flask
+    static_modifications = """
+    <script>
+    // Static data for demonstration
+    var staticStudents = [
+      "Deekshit K", "Aditi Deep", "Rajveer S", "Amresh R", "Neelambari V",
+      "Deeksha K", "Varun Ravindran Nair", "Dipan K", "Charupriya", "Shivam C",
+      "Shounak D", "Vaibhav V", "Avinash Verma", "Arkadeep", "Sarth Buch",
+      "Aviral Yadav", "Pranjal M", "Mohith S", "Sudhesh S", "Anup Jeev",
+      "Aaditya Goyal", "Pradyumn"
+    ];
+    
+    var staticScores = {
+      "Deekshit K": 90.7, "Aditi Deep": 89.8, "Rajveer S": 88.1, "Amresh R": 86.1,
+      "Neelambari V": 85.8, "Deeksha K": 85.4, "Varun Ravindran Nair": 84.6,
+      "Dipan K": 84.1, "Charupriya": 84.0, "Shivam C": 83.2, "Shounak D": 82.5,
+      "Vaibhav V": 81.2, "Avinash Verma": 80.2, "Arkadeep": 78.8, "Sarth Buch": 76.5,
+      "Aviral Yadav": 73.6, "Pranjal M": 72.7, "Mohith S": 62.5, "Sudhesh S": 60.4,
+      "Anup Jeev": 56.0, "Aaditya Goyal": 0.0, "Pradyumn": 0.0
+    };
+    
+    // Mock API functions for static deployment
+    var M = {
+      students: function() { return Promise.resolve(staticStudents); },
+      scores: function() { 
+        var scores = Object.keys(staticScores).map(name => ({Student: name, Overall_Score: staticScores[name]}));
+        return Promise.resolve(scores);
+      },
+      perImageScores: function() { return Promise.resolve([]); },
+      annotation: function(student, img) { return Promise.resolve({gt_boxes:[], student_boxes:[]}); },
+      imgSrc: function(img) { return "https://via.placeholder.com/800x600/333/fff?text=Demo+Image+" + img; },
+      images: function() { return Promise.resolve({images: staticStudents.map((s, i) => 'demo_' + i + '.jpg'), total: staticStudents.length}); }
+    };
+    
+    // Override the boot function for static deployment
+    function boot() {
+      console.log('Static AnnotCheck Dashboard loaded');
+      renderStudentList(staticStudents);
+      document.getElementById('h-active').textContent = staticStudents.length + ' students';
+      document.getElementById('sb-count').textContent = staticStudents.length;
+      
+      // Show demo content instead of real images
+      document.getElementById('placeholder-msg').innerHTML = 
+        '<div class="big">??</div><div>Static Demo Mode - Run locally for full functionality</div>';
+    }
+    
+    // Start the application
+    boot();
+    </script>
+    """
+    
+    # Insert the static modifications before the closing </body> tag
+    dashboard_html = dashboard_html.replace('</body>', static_modifications + '</body>')
+    
+    index_html = dashboard_html
     
     with open(public_dir / "index.html", "w", encoding="utf-8") as f:
         f.write(index_html)
