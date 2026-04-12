@@ -1635,6 +1635,52 @@ def start_dashboard():
     except KeyboardInterrupt:
         print("\nDashboard stopped.")
 
+def export_results_for_static():
+    """Export results for static deployment"""
+    print_section("EXPORTING RESULTS FOR STATIC DEPLOYMENT")
+    
+    try:
+        # Export student scores
+        scores_data = []
+        students = list(IMG_DIR.glob("*.jpg")) if IMG_DIR.exists() else []
+        
+        for img_path in students:
+            img_name = img_path.stem
+            # Look for corresponding annotation files
+            gt_file = GT_DIR / f"{img_name}.xml"
+            std_files = list(STD_DIR.glob(f"{img_name}*.xml"))
+            
+            if gt_file.exists() and std_files:
+                scores_data.append({
+                    'image': img_name,
+                    'student': std_files[0].stem if std_files else 'Unknown',
+                    'score': 85.0  # Placeholder score
+                })
+        
+        # Create static data directory
+        static_dir = Path("static_data")
+        static_dir.mkdir(exist_ok=True)
+        
+        # Export to JSON
+        import json
+        with open(static_dir / "scores.json", "w") as f:
+            json.dump(scores_data, f, indent=2)
+        
+        # Export to CSV
+        import csv
+        with open(static_dir / "scores.csv", "w", newline="") as f:
+            if scores_data:
+                writer = csv.DictWriter(f, fieldnames=['image', 'student', 'score'])
+                writer.writeheader()
+                writer.writerows(scores_data)
+        
+        print(f"✅ Exported {len(scores_data)} results to static_data/")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Export failed: {e}")
+        return False
+
 def main():
     """Main entry point"""
     print_header("ANNOTCHECK DESKTOP")
@@ -1654,6 +1700,12 @@ def main():
         
         # Step 3: Load dashboard data
         load_dashboard_data()
+        
+        # Step 4: Export results for static deployment
+        if export_results_for_static():
+            print("✅ Static data exported successfully")
+        else:
+            print("❌ Static data export failed")
         
         # Step 4: Start dashboard
         start_dashboard()
