@@ -18,6 +18,11 @@ def main():
     # Copy main Python file to public directory
     shutil.copy("annotcheck_desktop.py", public_dir / "annotcheck_desktop.py")
     
+    # Create API directory and copy serverless function
+    api_dir = public_dir / "api"
+    api_dir.mkdir(exist_ok=True)
+    shutil.copy("api/index.py", api_dir / "index.py")
+    
     # Copy requirements.txt for dependency installation
     shutil.copy("requirements.txt", public_dir / "requirements.txt")
     

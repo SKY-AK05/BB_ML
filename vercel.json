@@ -12,15 +12,20 @@
   ],
   "cleanUrls": true,
   "trailingSlash": false,
-  "functions": {},
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9",
+      "handler": "annotcheck_desktop.app"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/annotcheck_desktop.py"
+      "destination": "/api/index.py"
     }
   ],
   "installCommand": "pip install -r requirements.txt",
-  "buildCommand": "python build.py",
+  "buildCommand": "python build.py && mkdir -p public/api && cp annotcheck_desktop.py public/api/index.py",
   "outputDirectory": "public",
   "framework": null
 }
