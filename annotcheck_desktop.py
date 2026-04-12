@@ -484,9 +484,11 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
   border-radius:20px;padding:2px 9px;white-space:nowrap;}
 #nav-spacer{flex:1}
 
-#layout{display:grid;grid-template-columns:220px 1fr;height:calc(100vh - 56px)}
+#layout{display:grid;grid-template-columns:220px 1fr 300px;height:calc(100vh - 56px)}
 
 #sidebar{background:var(--white);border-right:var(--border);display:flex;flex-direction:column;overflow:hidden}
+#rules-sidebar{background:var(--white);border-left:var(--border);display:flex;flex-direction:column;overflow:hidden}
+#rules-sidebar .sb-head{background:var(--cyan);color:var(--black);}
 .sb-head{background:var(--purple);color:var(--white);font-family:var(--head);font-size:14px;
   padding:9px 14px;border-bottom:var(--border);flex-shrink:0;
   display:flex;align-items:center;justify-content:space-between;}
@@ -774,6 +776,79 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
       </div>
     </div>
   </main>
+
+  <!-- Rules & Feedback Sidebar -->
+  <aside id="rules-sidebar">
+    <div class="sb-head">
+      <span>?? Rules & Tips</span>
+    </div>
+    
+    <!-- Rules Section -->
+    <div id="rules-section" style="padding:12px;overflow-y:auto;flex:1;">
+      <h3 style="font-family:var(--head);font-size:14px;margin-bottom:8px;color:var(--purple);">Annotation Rules</h3>
+      <div id="rules-content" style="font-size:11px;line-height:1.4;">
+        <div style="background:#fff8e1;border:2px solid #ffc107;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:#ffc107;color:#111;font-size:9px;font-weight:900;border-radius:4px;padding:1px 6px;">RULE 1</span>
+            <strong style="font-size:12px;">80% Confidence Required</strong>
+          </div>
+          <div style="color:#444;">Only annotate if you are <strong>at least 80% sure</strong> it is a license plate.</div>
+          <div style="margin-top:5px;background:#fffde7;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
+            &#10060; Skip if you're unsure - a missed plate is better than a wrong annotation
+          </div>
+        </div>
+        <div style="background:#e8f5e9;border:2px solid #4caf50;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:#4caf50;color:#fff;font-size:9px;font-weight:900;border-radius:4px;padding:1px 6px;">RULE 2</span>
+            <strong style="font-size:12px;">50% Plate Must Be Visible</strong>
+          </div>
+          <div style="color:#444;">Annotate only if <strong>at least half the license plate</strong> is visible in the image.</div>
+          <div style="margin-top:5px;background:#f1f8e9;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
+            &#10060; Skip heavily cropped or mostly hidden plates
+          </div>
+        </div>
+        <div style="background:#e3f2fd;border:2px solid #2196f3;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:#2196f3;color:#fff;font-size:9px;font-weight:900;border-radius:4px;padding:1px 6px;">RULE 3</span>
+            <strong style="font-size:12px;">All Edges Must Be Visible</strong>
+          </div>
+          <div style="color:#444;">All <strong>4 edges of the license plate</strong> must be clearly visible before annotating.</div>
+          <div style="margin-top:5px;background:#e8f4fd;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
+            &#10060; Do not annotate if any edge goes outside the image frame
+          </div>
+        </div>
+        <div style="background:#f3e5f5;border:2px solid #9b5de5;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:#9b5de5;color:#fff;font-size:9px;font-weight:900;border-radius:4px;padding:1px 6px;">RULE 4</span>
+            <strong style="font-size:12px;">Tight Box - No Gaps</strong>
+          </div>
+          <div style="color:#444;">Draw the box <strong>as tight as possible</strong> around the plate edges - no extra space.</div>
+          <div style="margin-top:5px;background:#fce4ec;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
+            &#10060; Avoid loose boxes with large gaps around the plate
+          </div>
+        </div>
+        <div style="background:#111;border-radius:8px;padding:9px 11px;margin-top:4px;">
+          <div style="color:#ffe033;font-family:var(--head);font-size:12px;margin-bottom:5px;">&#9889; Quick Checklist</div>
+          <div style="color:#eee;font-size:11px;line-height:1.8;">
+            &#9744;&nbsp; Am I 80%+ sure this is a license plate?<br>
+            &#9744;&nbsp; Is 50% or more of the plate visible?<br>
+            &#9744;&nbsp; Are all 4 edges clearly visible?<br>
+            &#9744;&nbsp; Is my box as tight as possible?
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Feedback Section -->
+    <div id="feedback-section" style="border-top:var(--border);padding:12px;overflow-y:auto;flex:1;">
+      <h3 style="font-family:var(--head);font-size:14px;margin-bottom:8px;color:var(--cyan);">Personalized Feedback</h3>
+      <div id="feedback-content" style="font-size:11px;line-height:1.4;">
+        <div style="text-align:center;color:#999;padding:20px;">
+          Select a student to see personalized feedback
+        </div>
+      </div>
+    </div>
+  </aside>
 </div>
 
 <script>
@@ -930,7 +1005,10 @@ function toggleLayer(w){
 
 // ── Boot ─────────────────────────────────────────────────────
 async function boot(){
-  var sc=await M.scores();
+  var results=await Promise.all([M.scores(),M.perImageScores()]);
+  var sc=results[0];
+  summaryData=sc||[]; // Load summary data for feedback system
+  perImageData=results[1]||[];
   if(sc)sc.forEach(function(r){scoreMap[r.Student]=r.Overall_Score;});
   var sts=await M.students();
   if(sts){allStudents=sts;renderStudentList(allStudents);
@@ -970,10 +1048,146 @@ function filterStudents(){
     c.classList.toggle('active',c.dataset.name===currentStudent);});
 }
 
+function generateFeedback(data) {
+  var FN = data.fn || 0;
+  var FP = data.fp || 0;
+  var iou = data.avg_iou || 0;
+  var total = data.total_gt || 1;
+  var missRate = FN / total;
+  var fpRate   = FP / total;
+
+  if(total === 0) return { type:'good', msg:'No plates expected in this image.', tip:'' };
+
+  if(missRate > 0.15 && fpRate > 0.15)
+    return { type:'warn', msg:'Some plates were missed and some boxes were in wrong areas.', tip:'Scan the full image carefully and only mark what you are confident about.' };
+  if(missRate > 0.15)
+    return { type:'warn', msg:'Not all license plates were found in this image.', tip:'Look at every corner of the image - plates can be small or partially hidden.' };
+  if(fpRate > 0.15)
+    return { type:'warn', msg:'Some boxes were placed on areas that are not license plates.', tip:'Only draw a box if you are confident it is a license plate.' };
+  if(iou < 0.88 && iou > 0)
+    return { type:'tip', msg:'Boxes could fit tighter around the plates.', tip:'Try to hug the edges of the plate as closely as possible.' };
+
+  return { type:'good', msg:'All plates found and boxes look good!', tip:'Keep making boxes as tight as possible around the plate edges.' };
+}
+
+function generateOverallFeedback(student) {
+  var row = summaryData.find(function(r){ return r.Student === student; });
+  if(!row) return null;
+
+  var overall   = parseFloat(row.Overall_Score) || 0;
+  var precision = parseFloat(row.Precision)     || 0;
+  var recall    = parseFloat(row.Recall)        || 0;
+  var iou       = parseFloat(row.Avg_IoU)       || 0;
+  var labelAcc  = parseFloat(row.Label_Accuracy)|| 0;
+  var tp        = parseInt(row.TP)              || 0;
+
+  var missingPlates = recall < 75;
+  var tooManyWrong  = precision < 75;
+  var looseBoxes    = iou < 0.88 && iou > 0;
+  var labelIssues   = labelAcc < 90 && labelAcc > 0;
+  var didNothing    = tp === 0;
+
+  var tips = [];
+
+  if(didNothing){
+    tips.push({ icon:'&#128230;', text:'No annotations submitted.', tip:'Please open each image and annotate every license plate you can find.' });
+  } else {
+    if(missingPlates && tooManyWrong){
+      tips.push({ icon:'&#128270;', text:'Focus on finding more license plates.', tip:'Scan the whole image slowly - plates can appear at different angles and sizes.' });
+      tips.push({ icon:'&#127919;', text:'Be more careful about what you mark.', tip:'Only draw a box when you are at least 80% sure it is a license plate.' });
+    } else if(missingPlates){
+      tips.push({ icon:'&#128270;', text:'Focus on finding more license plates.', tip:'Scan the full image carefully - check every vehicle, corner, and background area.' });
+    } else if(tooManyWrong){
+      tips.push({ icon:'&#127919;', text:'Reduce wrong annotations.', tip:'You are marking areas that are not license plates. Apply the 80% confidence rule before drawing a box.' });
+    }
+    if(looseBoxes){
+      tips.push({ icon:'&#128230;', text:'Make your boxes tighter.', tip:'Box edges should touch the plate edges as closely as possible - remove gaps on all sides.' });
+    }
+    if(labelIssues){
+      tips.push({ icon:'&#127991;', text:'Double-check labels before saving.', tip:'Some boxes have the wrong label type. Re-read the label guide if you are unsure.' });
+    }
+  }
+
+  var verdict, verdictColor, verdictBorder;
+  if(didNothing){
+    verdict = '&#128230; No work submitted yet.';
+    verdictColor = '#F1EFE8'; verdictBorder = '#B4B2A9';
+  } else if(overall >= 85){
+    verdict = '&#127775; Great work - keep this up!';
+    verdictColor = '#EAF3DE'; verdictBorder = '#639922';
+  } else if(overall >= 70){
+    verdict = '&#9989; Good progress - a few things to tighten up.';
+    verdictColor = '#FAEEDA'; verdictBorder = '#BA7517';
+  } else if(overall >= 50){
+    verdict = '&#128200; You are improving - focus on the tips below.';
+    verdictColor = '#FAECE7'; verdictBorder = '#993C1D';
+  } else {
+    verdict = '&#128170; Keep going - review the rules carefully.';
+    verdictColor = '#FBEAF0'; verdictBorder = '#993556';
+  }
+
+  return { verdict:verdict, verdictColor:verdictColor, verdictBorder:verdictBorder, tips:tips };
+}
+
+function updateFeedback(studentName, imageData) {
+  var feedbackDiv = document.getElementById('feedback-content');
+  var html = '';
+
+  // ?? Overall section ??
+  var ov = generateOverallFeedback(studentName);
+  if(ov){
+    html += '<div style="padding:10px 12px 4px;">';
+    html += '<div style="font-family:var(--head);font-size:13px;color:var(--purple);margin-bottom:8px;">&#128200; Overall Feedback</div>';
+
+    // Verdict banner - no numbers
+    html += '<div style="background:'+ov.verdictColor+';border-radius:8px;padding:10px 12px;margin-bottom:8px;border:2px solid '+ov.verdictBorder+';">';
+    html += '<div style="font-size:13px;font-weight:700;">'+ov.verdict+'</div>';
+    html += '</div>';
+
+    if(ov.tips.length > 0){
+      html += '<div style="font-size:11px;font-weight:700;color:#555;margin-bottom:6px;">Areas to improve:</div>';
+      ov.tips.forEach(function(t){
+        html += '<div style="background:#fffbf0;border-left:3px solid #ff9800;border-radius:0 6px 6px 0;padding:8px 10px;margin-bottom:6px;">';
+        html += '<div style="font-size:12px;font-weight:700;">'+t.icon+' '+t.text+'</div>';
+        html += '<div style="font-size:11px;color:#666;margin-top:3px;">&#128073; '+t.tip+'</div>';
+        html += '</div>';
+      });
+    } else {
+      html += '<div style="background:#e8f5e8;border-left:3px solid #4caf50;border-radius:0 6px 6px 0;padding:8px 10px;font-size:12px;font-weight:700;">&#9989; No issues found - excellent consistency!</div>';
+    }
+    html += '</div>';
+    html += '<div style="border-top:2px dashed #ddd;margin:6px 0;"></div>';
+  }
+
+  // ?? Per-image section ??
+  html += '<div style="padding:0 12px 10px;">';
+  html += '<div style="font-family:var(--head);font-size:13px;color:var(--cyan);margin-bottom:8px;">&#128444; This Image</div>';
+
+  if(!imageData){
+    html += '<div style="text-align:center;color:#bbb;padding:14px;font-size:11px;">Open an image to see feedback</div>';
+  } else {
+    var fb = generateFeedback(imageData);
+    var bgCol    = fb.type==='good' ? '#e8f5e8' : fb.type==='tip' ? '#e3f2fd' : '#fffbf0';
+    var bdCol    = fb.type==='good' ? '#4caf50' : fb.type==='tip' ? '#2196f3' : '#ff9800';
+    var icon     = fb.type==='good' ? '&#9989;'  : fb.type==='tip' ? '&#128230;' : '&#128269;';
+
+    html += '<div style="background:'+bgCol+';border:2px solid '+bdCol+';border-radius:8px;padding:10px 12px;margin-bottom:6px;">';
+    html += '<div style="font-size:12px;font-weight:700;">'+icon+' '+fb.msg+'</div>';
+    if(fb.tip){
+      html += '<div style="font-size:11px;color:#555;margin-top:5px;border-top:1px solid '+bdCol+'44;padding-top:5px;">&#128073; '+fb.tip+'</div>';
+    }
+    html += '</div>';
+  }
+
+  html += '</div>';
+  feedbackDiv.innerHTML = html;
+}
+
 async function selectStudent(name){
   currentStudent=name;
   document.querySelectorAll('.student-card').forEach(function(c){c.classList.toggle('active',c.dataset.name===name);});
   document.getElementById('h-active').textContent=name;
+  updateFeedback(name, null);
   if(currentIdx>=0)await renderImage(currentIdx);
 }
 
@@ -1023,6 +1237,28 @@ async function renderImage(idx){
   ab.style.display=currentStudent?'flex':'none';
   document.getElementById('ab-gt').textContent ='GT: '+annot.gt_boxes.length;
   document.getElementById('ab-std').textContent='You: '+annot.student_boxes.length;
+
+  // Update feedback with real per-image metrics
+  if(currentStudent){
+    var row = perImageData.find(function(r){
+      return r.Student === currentStudent && r.Image === imgName;
+    });
+    if(row){
+      var imageData = {
+        fn:            parseInt(row.FN)             || 0,
+        fp:            parseInt(row.FP)             || 0,
+        avg_iou:       parseFloat(row.Avg_IoU)      || 0,
+        label_accuracy:parseFloat(row.Label_Accuracy)|| 100,
+        total_gt:      parseInt(row.GT_Boxes)       || 1,
+        student_count: parseInt(row.S_Boxes)        || 0
+      };
+      updateFeedback(currentStudent, imageData);
+    } else {
+      // Image not yet scored - show neutral message
+      document.getElementById('feedback-content').innerHTML =
+        '<div style="text-align:center;color:#999;padding:20px;font-size:12px;">No score data for this image yet.</div>';
+    }
+  }
 
   var resp=await fetch(M.imgSrc(imgName));
   var blob=await resp.blob();
