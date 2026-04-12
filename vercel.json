@@ -12,8 +12,7 @@
   ],
   "cleanUrls": true,
   "trailingSlash": false,
-  "installCommand": "echo 'No dependencies needed for static deployment'",
-  "buildCommand": "python build.py",
+    "buildCommand": "python build.py",
   "outputDirectory": "public",
   "framework": null
 }
