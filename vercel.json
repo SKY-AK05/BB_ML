@@ -12,7 +12,6 @@
   ],
   "cleanUrls": true,
   "trailingSlash": false,
-    "buildCommand": "python build.py",
-  "outputDirectory": "public",
+      "outputDirectory": "public",
   "framework": null
 }
