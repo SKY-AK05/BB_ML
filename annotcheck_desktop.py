@@ -1610,7 +1610,9 @@ def api_image(image_name):
 
 def run_flask():
     """Run Flask app"""
-    app.run(port=5000, debug=False, use_reloader=False)
+    import os
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
 
 def start_dashboard():
     """Start the dashboard in a separate thread"""
