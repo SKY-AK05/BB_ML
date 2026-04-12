@@ -3,8 +3,15 @@
   "name": "annotcheck",
   "routes": [
     {
+      "src": "/",
+      "dest": "/index.html",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    },
+    {
       "src": "/(.*)",
-      "dest": "/",
+      "dest": "/$1",
       "headers": {
         "Cache-Control": "public, max-age=86400"
       }
@@ -12,6 +19,6 @@
   ],
   "cleanUrls": true,
   "trailingSlash": false,
-      "outputDirectory": "public",
+  "outputDirectory": "public",
   "framework": null
 }
