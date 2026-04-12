@@ -47,7 +47,7 @@ for dir_path in [BASE_DIR, XML_DIR, GT_DIR, IMG_DIR, UPLOAD_DIR]:
     dir_path.mkdir(exist_ok=True)
 
 # Flask app configuration
-PAGE_SIZE = 24
+PAGE_SIZE = 1000
 ADMIN_PASSWORD = "orchvate2024"
 ADMIN_HASH = hashlib.sha256(ADMIN_PASSWORD.encode()).hexdigest()
 
@@ -1640,22 +1640,30 @@ def export_results_for_static():
     print_section("EXPORTING RESULTS FOR STATIC DEPLOYMENT")
     
     try:
-        # Export student scores
-        scores_data = []
-        students = list(IMG_DIR.glob("*.jpg")) if IMG_DIR.exists() else []
+        # Load real scores from CSV file
+        scores_file = BASE_DIR / "scores.csv"
+        if not scores_file.exists():
+            print("No scores.csv found. Please run scoring first.")
+            return False
         
-        for img_path in students:
-            img_name = img_path.stem
-            # Look for corresponding annotation files
-            gt_file = GT_DIR / f"{img_name}.xml"
-            std_files = list(STD_DIR.glob(f"{img_name}*.xml"))
-            
-            if gt_file.exists() and std_files:
-                scores_data.append({
-                    'image': img_name,
-                    'student': std_files[0].stem if std_files else 'Unknown',
-                    'score': 85.0  # Placeholder score
-                })
+        import pandas as pd
+        df = pd.read_csv(scores_file)
+        
+        # Convert to list of dictionaries
+        scores_data = []
+        for _, row in df.iterrows():
+            scores_data.append({
+                'student': row.get('Student', 'Unknown'),
+                'score': float(row.get('Overall_Score', 0)),
+                'tp': int(row.get('TP', 0)),
+                'fp': int(row.get('FP', 0)),
+                'fn': int(row.get('FN', 0)),
+                'iou': float(row.get('IoU', 0)),
+                'label_acc': float(row.get('Label_Acc', 0)),
+                'precision': float(row.get('Precision', 0)),
+                'recall': float(row.get('Recall', 0)),
+                'f1': float(row.get('F1', 0))
+            })
         
         # Create static data directory
         static_dir = Path("static_data")
@@ -1666,19 +1674,20 @@ def export_results_for_static():
         with open(static_dir / "scores.json", "w") as f:
             json.dump(scores_data, f, indent=2)
         
-        # Export to CSV
+        # Export simplified CSV
         import csv
         with open(static_dir / "scores.csv", "w", newline="") as f:
             if scores_data:
-                writer = csv.DictWriter(f, fieldnames=['image', 'student', 'score'])
+                writer = csv.DictWriter(f, fieldnames=['student', 'score'])
                 writer.writeheader()
-                writer.writerows(scores_data)
+                for item in scores_data:
+                    writer.writerow({'student': item['student'], 'score': item['score']})
         
-        print(f"✅ Exported {len(scores_data)} results to static_data/")
+        print(f"Exported {len(scores_data)} results to static_data/")
         return True
         
     except Exception as e:
-        print(f"❌ Export failed: {e}")
+        print(f"Export failed: {e}")
         return False
 
 def main():
