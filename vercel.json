@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "name": "annotcheck",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/",
+      "headers": {
+        "Cache-Control": "public, max-age=86400"
+      }
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "functions": {},
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/annotcheck_desktop.py"
+    }
+  ],
+  "installCommand": "pip install -r requirements.txt",
+  "buildCommand": "python build.py",
+  "outputDirectory": "public",
+  "framework": null
+}
