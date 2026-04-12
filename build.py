@@ -23,8 +23,7 @@ def main():
     api_dir.mkdir(exist_ok=True)
     shutil.copy("api/index.py", api_dir / "index.py")
     
-    # Copy requirements.txt for dependency installation
-    shutil.copy("requirements.txt", public_dir / "requirements.txt")
+    # Don't copy requirements.txt to prevent dependency installation
     
     # Copy annotation project if it exists
     if Path("annotation_project").exists():
