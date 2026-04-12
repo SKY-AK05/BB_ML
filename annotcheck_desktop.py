@@ -138,10 +138,9 @@ def extract_zip_files():
         for z in existing_zips:
             print(f"   {z.name}")
         
-        # For Railway deployment, assume no existing files and proceed
-    choice = 'n'  # Default to no for Railway
-    if choice == 'y':
+        # For Railway deployment, automatically use existing files
         print("Using existing files...")
+        choice = 'y'
     else:
         print("No ZIP files found in uploads directory.")
         print("Please place your ZIP files in the 'uploads' directory and run again.")
