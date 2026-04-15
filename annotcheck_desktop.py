@@ -425,7 +425,12 @@ def load_dashboard_data():
     # Build image stem map for extension-agnostic matching
     _img_stem_map = {_norm_stem(f): f for f in os.listdir(IMG_DIR)}
     
-    image_list = sorted(os.listdir(IMG_DIR))
+    # Sort images numerically to match ground truth order
+    def natural_sort_key(s):
+        import re
+        return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
+    
+    image_list = sorted(os.listdir(IMG_DIR), key=natural_sort_key)
     
     print(f"Loaded: {len(all_student_annots)} students | {len(gt_annotations)} GT images | {len(image_list)} images")
     
