@@ -782,7 +782,7 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
   <!-- Rules & Feedback Sidebar -->
   <aside id="rules-sidebar">
     <div class="sb-head">
-      <span>?? Rules & Tips</span>
+      <span>📋 Rules & Tips</span>
     </div>
     
     <!-- Rules Section -->
@@ -796,7 +796,7 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
           </div>
           <div style="color:#444;">Only annotate if you are <strong>at least 80% sure</strong> it is a license plate.</div>
           <div style="margin-top:5px;background:#fffde7;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
-            &#10060; Skip if you're unsure - a missed plate is better than a wrong annotation
+            ❌ Skip if you're unsure - a missed plate is better than a wrong annotation
           </div>
         </div>
         <div style="background:#e8f5e9;border:2px solid #4caf50;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
@@ -806,7 +806,7 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
           </div>
           <div style="color:#444;">Annotate only if <strong>at least half the license plate</strong> is visible in the image.</div>
           <div style="margin-top:5px;background:#f1f8e9;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
-            &#10060; Skip heavily cropped or mostly hidden plates
+            ❌ Skip heavily cropped or mostly hidden plates
           </div>
         </div>
         <div style="background:#e3f2fd;border:2px solid #2196f3;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
@@ -816,7 +816,7 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
           </div>
           <div style="color:#444;">All <strong>4 edges of the license plate</strong> must be clearly visible before annotating.</div>
           <div style="margin-top:5px;background:#e8f4fd;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
-            &#10060; Do not annotate if any edge goes outside the image frame
+            ❌ Do not annotate if any edge goes outside the image frame
           </div>
         </div>
         <div style="background:#f3e5f5;border:2px solid #9b5de5;border-radius:8px;padding:9px 10px;margin-bottom:8px;">
@@ -826,16 +826,16 @@ html,body{height:100%;font-family:var(--body);background:var(--mint);overflow:hi
           </div>
           <div style="color:#444;">Draw the box <strong>as tight as possible</strong> around the plate edges - no extra space.</div>
           <div style="margin-top:5px;background:#fce4ec;border-radius:5px;padding:5px 7px;color:#888;font-style:italic;">
-            &#10060; Avoid loose boxes with large gaps around the plate
+            ❌ Avoid loose boxes with large gaps around the plate
           </div>
         </div>
         <div style="background:#111;border-radius:8px;padding:9px 11px;margin-top:4px;">
-          <div style="color:#ffe033;font-family:var(--head);font-size:12px;margin-bottom:5px;">&#9889; Quick Checklist</div>
+          <div style="color:#ffe033;font-family:var(--head);font-size:12px;margin-bottom:5px;">⚡ Quick Checklist</div>
           <div style="color:#eee;font-size:11px;line-height:1.8;">
-            &#9744;&nbsp; Am I 80%+ sure this is a license plate?<br>
-            &#9744;&nbsp; Is 50% or more of the plate visible?<br>
-            &#9744;&nbsp; Are all 4 edges clearly visible?<br>
-            &#9744;&nbsp; Is my box as tight as possible?
+            ☐ Am I 80%+ sure this is a license plate?<br>
+            ☐ Is 50% or more of the plate visible?<br>
+            ☐ Are all 4 edges clearly visible?<br>
+            ☐ Is my box as tight as possible?
           </div>
         </div>
       </div>
