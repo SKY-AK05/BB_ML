@@ -425,12 +425,42 @@ def load_dashboard_data():
     # Build image stem map for extension-agnostic matching
     _img_stem_map = {_norm_stem(f): f for f in os.listdir(IMG_DIR)}
     
-    # Sort images numerically to match ground truth order
-    def natural_sort_key(s):
-        import re
-        return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
-    
-    image_list = sorted(os.listdir(IMG_DIR), key=natural_sort_key)
+    # Extract image order from ground truth XML to match exactly
+    image_list = []
+    try:
+        import xml.etree.ElementTree as ET
+        gt_xml = GT_DIR / "annotations.xml"
+        if gt_xml.exists():
+            tree = ET.parse(gt_xml)
+            root = tree.getroot()
+            for image_elem in root.findall('image'):
+                img_name = image_elem.get('name')
+                if img_name:
+                    # Extract just the filename from the path
+                    img_filename = img_name.split('/')[-1]
+                    if img_filename in os.listdir(IMG_DIR):
+                        image_list.append(img_filename)
+            
+            # Add any remaining images not in GT XML
+            gt_images = set(image_list)
+            all_images = set(os.listdir(IMG_DIR))
+            remaining_images = sorted(all_images - gt_images)
+            image_list.extend(remaining_images)
+            
+            print(f"Image order from GT XML: {len(image_list)} images")
+        else:
+            # Fallback to natural sorting if no GT XML
+            def natural_sort_key(s):
+                import re
+                return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
+            image_list = sorted(os.listdir(IMG_DIR), key=natural_sort_key)
+    except Exception as e:
+        print(f"Warning: Could not extract order from GT XML: {e}")
+        # Fallback to natural sorting
+        def natural_sort_key(s):
+            import re
+            return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
+        image_list = sorted(os.listdir(IMG_DIR), key=natural_sort_key)
     
     print(f"Loaded: {len(all_student_annots)} students | {len(gt_annotations)} GT images | {len(image_list)} images")
     
