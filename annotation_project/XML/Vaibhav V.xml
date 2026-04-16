@@ -45,7 +45,7 @@
         </label>
       </labels>
     </task>
-    <dumped>2026-04-11 03:33:02.587038+00:00</dumped>
+    <dumped>2026-04-15 07:30:32.701708+00:00</dumped>
   </meta>
   <image id="0" name="ML_Model/Clean_Dataset/complex2/Dataset_1/1020.jpg" width="3000" height="4000">
     <box label="licence_plate" source="manual" occluded="0" xtl="1221.50" ytl="1567.60" xbr="1485.90" ybr="1637.00" z_order="0">
